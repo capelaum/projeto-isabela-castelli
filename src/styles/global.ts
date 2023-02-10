@@ -6,18 +6,31 @@ export const globalStyles = globalCss({
     padding: 0,
     boxSizing: 'border-box'
   },
+
   html: {
     scrollBehavior: 'smooth'
   },
+
   body: {
     backgroundColor: '$gray900',
     color: '$gray300',
-    fontFamily: 'Roboto, sans-serif',
-    fontWeight: 400
+    fontFamily: '$roboto',
+    fontWeight: 400,
+    '-webkit-font-smoothing': 'antialised'
   },
 
   'a, button': {
+    fontFamily: '$roboto',
     cursor: 'pointer',
-    border: 'none'
+    border: 'none',
+
+    '&:disabled': {
+      cursor: 'not-allowed',
+      opacity: 0.7
+    }
+  },
+
+  input: {
+    fontFamily: '$roboto'
   }
 })
