@@ -12,15 +12,15 @@ export const globalStyles = globalCss({
   },
 
   body: {
-    backgroundColor: '$gray900',
-    color: '$gray300',
-    fontFamily: '$roboto',
+    backgroundColor: '$gray5',
+    color: '$white',
+    fontFamily: '$inter',
     fontWeight: 400,
     '-webkit-font-smoothing': 'antialised'
   },
 
   'a, button': {
-    fontFamily: '$roboto',
+    fontFamily: '$inter',
     cursor: 'pointer',
     border: 'none',
 
@@ -31,6 +31,6 @@ export const globalStyles = globalCss({
   },
 
   input: {
-    fontFamily: '$roboto'
+    fontFamily: '$inter'
   }
 })

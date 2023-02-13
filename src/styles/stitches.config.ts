@@ -15,20 +15,20 @@ export const {
       white: '#FFFFFF',
       black: '#000000',
 
-      gray900: '#171717',
-      gray800: '#262626',
-      gray700: '#404040',
-      gray600: '#525252',
-      gray500: '#737373',
-      gray400: '#a3a3a3',
-      gray300: '#d4d4d4',
-      gray200: '#e5e5e5',
-      gray100: '#f5f5f5',
-      gray50: '#fafafa'
+      primary: '#EBC7C5',
+      secondary: '#CC96A3',
+
+      gray1: '#B3B0B8',
+      gray2: '#7C7A80',
+      gray3: '#454652',
+      gray4: '#2B2C33',
+      gray5: '#1E1F24',
+      gray6: '#101114'
     },
 
     fonts: {
-      roboto: 'Roboto, sans-serif'
+      inter: 'Inter, sans-serif',
+      grotesk: 'Space Grotesk, sans-serif'
     },
 
     fontSizes: {
