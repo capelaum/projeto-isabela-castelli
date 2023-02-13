@@ -4,6 +4,8 @@ import { styled } from 'styles/stitches.config'
 export const StyledHeading = styled(Slot, {
   fontWeight: '$bold',
 
+  fontFamily: '$grotesk',
+
   variants: {
     color: {
       black: {
@@ -31,7 +33,7 @@ export const StyledHeading = styled(Slot, {
         fontSize: '2.5rem'
       },
       xl: {
-        fontSize: '3rem'
+        fontSize: '4rem'
       }
     }
   },

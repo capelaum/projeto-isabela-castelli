@@ -1,8 +1,8 @@
 import { Slot } from '@radix-ui/react-slot'
-import { ReactNode } from 'react'
+import { HTMLAttributes, ReactNode } from 'react'
 import { StyledHeading } from './styles'
 
-export interface HeadingProps {
+export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   size?: '2xs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   children: ReactNode
   asChild?: boolean

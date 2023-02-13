@@ -21,7 +21,7 @@ export interface TextProps {
 
 export function Text({
   color = 'gray',
-  size = 'sm',
+  size = 'md',
   weight = 'normal',
   asChild,
   children
