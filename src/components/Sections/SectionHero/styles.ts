@@ -33,93 +33,21 @@ export const HeroContainer = styled('div', {
   '@bp1': {
     flexDirection: 'column',
     margin: '0 1rem',
-    marginTop: '10rem'
+    width: 'auto'
   }
 })
 
-export const HeroTextWrapper = styled('div', {
+export const HeroContentWrapper = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'flex-start',
   gap: '2rem',
 
-  P: {
-    maxWidth: '450px',
-    width: '100%',
-    display: 'flex',
-    lineHeight: 1.4
-  },
-
-  a: {
-    marginTop: '1.5rem'
-  },
-
   '@bp1': {
     width: '100%',
     alignItems: 'center',
-    justifyContent: 'flex-start',
-    paddingBottom: '3rem',
-
-    p: {
-      textAlign: 'center'
-    }
-  },
-
-  '@bp2': {
-    p: {
-      fontSize: '$md'
-    }
-  },
-
-  '@bp3': {
-    p: {
-      fontSize: '$sm'
-    }
-  }
-})
-
-export const HeroHeadingWrapper = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '0.5rem',
-
-  h1: {
-    maxWidth: '650px',
-    width: '100%'
-  },
-
-  span: {
-    paddingLeft: '0.75rem'
-  },
-
-  '@bp1': {
-    h1: {
-      textAlign: 'center'
-    },
-
-    span: {
-      textAlign: 'center',
-      paddingLeft: 0
-    }
-  },
-
-  '@bp2': {
-    gap: '1rem',
-
-    h1: {
-      fontSize: '3rem'
-    },
-
-    span: {
-      fontSize: '$xs'
-    }
-  },
-
-  '@bp3': {
-    h1: {
-      fontSize: '2.125rem'
-    }
+    justifyContent: 'flex-start'
   }
 })
 
@@ -130,7 +58,7 @@ export const HeroImageWrapper = styled('div', {
   width: '60%',
 
   position: 'absolute',
-  top: '80px',
+  top: 0,
   right: 0,
   bottom: 0,
 
@@ -164,6 +92,7 @@ export const HeroImageWrapper = styled('div', {
 export const HeroImageMobileWrapper = styled('div', {
   display: 'none',
   position: 'relative',
+  marginTop: '3rem',
 
   width: '100%',
   height: '100%',

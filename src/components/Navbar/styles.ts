@@ -11,7 +11,7 @@ export const Wrapper = styled('section', {
   padding: '1rem 1.5rem 1.5rem',
 
   background:
-    'linear-gradient(to bottom, $white, $white, $white, $white, $white, $white, transparent)',
+    'linear-gradient(to bottom, $white, $white, $white, $white, transparent)',
 
   variants: {
     isScrolled: {
@@ -63,7 +63,7 @@ export const NavLink = styled(Link, {
   color: '$black',
   textDecoration: 'none',
   position: 'relative',
-  padding: '0.5rem 0',
+  padding: '0.75rem 0',
 
   '&:hover': {
     '&::after': {
@@ -81,6 +81,7 @@ export const NavLink = styled(Link, {
     bottom: 0,
     left: 0,
     display: 'block',
+    borderRadius: '$full',
 
     transition: '$slow'
   }

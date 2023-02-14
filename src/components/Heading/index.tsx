@@ -13,12 +13,13 @@ export function Heading({
   size,
   children,
   asChild,
-  color = 'white'
+  color = 'white',
+  ...props
 }: HeadingProps) {
   const Comp = asChild ? Slot : 'h2'
 
   return (
-    <StyledHeading size={size} as={Comp} color={color}>
+    <StyledHeading size={size} as={Comp} color={color} {...props}>
       {children}
     </StyledHeading>
   )

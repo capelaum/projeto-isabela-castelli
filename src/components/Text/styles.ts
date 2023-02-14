@@ -10,7 +10,10 @@ export const StyledText = styled(Slot, {
       white: {
         color: '$white'
       },
-      gray: {
+      gray3: {
+        color: '$gray3'
+      },
+      gray1: {
         color: '$gray1'
       }
     },

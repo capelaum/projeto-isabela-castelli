@@ -1,5 +1,5 @@
 import { Slot } from '@radix-ui/react-slot'
-import { ReactNode } from 'react'
+import { HTMLAttributes, ReactNode } from 'react'
 import { StyledText } from './styles'
 
 export type TextSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl'
@@ -11,8 +11,8 @@ export type TextWeights =
   | 'extrabold'
   | 'black'
 
-export interface TextProps {
-  color?: 'black' | 'white' | 'gray'
+export interface TextProps extends HTMLAttributes<HTMLSpanElement> {
+  color?: 'black' | 'white' | 'gray1' | 'gray3'
   size?: TextSizes
   weight?: TextWeights
   children: ReactNode
@@ -20,16 +20,17 @@ export interface TextProps {
 }
 
 export function Text({
-  color = 'gray',
+  color = 'gray1',
   size = 'md',
   weight = 'normal',
   asChild,
-  children
+  children,
+  ...props
 }: TextProps) {
   const Comp = asChild ? Slot : 'span'
 
   return (
-    <StyledText color={color} size={size} as={Comp} weight={weight}>
+    <StyledText color={color} size={size} as={Comp} weight={weight} {...props}>
       {children}
     </StyledText>
   )
