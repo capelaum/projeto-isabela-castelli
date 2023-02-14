@@ -25,14 +25,18 @@ export const HeroContainer = styled('div', {
   justifyContent: 'flex-start',
   alignItems: 'center',
 
+  // border: '1px solid red',
+
   margin: '0 1.5rem',
   width: '100%',
   maxWidth: '1400px',
+
   zIndex: 3,
 
   '@bp1': {
     flexDirection: 'column',
     margin: '0 1rem',
+    marginTop: '12rem',
     width: 'auto'
   }
 })
@@ -40,8 +44,6 @@ export const HeroContainer = styled('div', {
 export const HeroContentWrapper = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'flex-start',
   gap: '2rem',
 
   '@bp1': {

@@ -27,7 +27,6 @@ export const HeroHeadingWrapper = styled('div', {
   },
 
   '@bp1': {
-    marginTop: '10rem',
     alignItems: 'center',
 
     'h1, h2, h3': {

@@ -19,7 +19,7 @@ export function HeroSocial() {
 
       <HeroSocialLinks>
         <HeroSocialLink
-          href="#"
+          href="https://www.instagram.com/psi.isabelacastelli"
           title="psi.isabelacastelli"
           target="_blank"
           rel="noopener noreferrer"
@@ -32,8 +32,9 @@ export function HeroSocial() {
         </HeroSocialLink>
 
         <HeroSocialLink
-          href="#"
-          title="doctoralia isabelacastelli"
+          href="https://www.doctoralia.com.br/isabela-castelli/psicologo/brasilia"
+          title="Doctoralia da Isabela Castelli"
+          target="_blank"
           rel="noopener noreferrer"
         >
           <Image src={Doctoralia} alt="Logo do Instagram." />

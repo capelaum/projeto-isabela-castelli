@@ -4,6 +4,11 @@ import { Text } from 'components/Text'
 import { HeroHeadingWrapper } from './styles'
 
 export function HeroHeading() {
+  // make urlencodedtext
+  const message = encodeURIComponent(
+    'Olá Isabela, gostaria de marcar uma consulta.'
+  )
+
   return (
     <HeroHeadingWrapper>
       <Text weight="semibold" color="black" size="sm" asChild>
@@ -21,7 +26,12 @@ export function HeroHeading() {
         </h3>
       </Text>
 
-      <ButtonLink href="#" size="xl" title="Agendar Consulta">
+      <ButtonLink
+        href={`https://wa.me/5561981668336?text=${message}`}
+        size="xl"
+        title="Agendar Consulta"
+        target="_blank"
+      >
         Agendar Consulta
       </ButtonLink>
     </HeroHeadingWrapper>
