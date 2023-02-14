@@ -3,6 +3,7 @@ import { SectionAbout } from 'components/Sections/SectionAbout'
 import { SectionClinic } from 'components/Sections/SectionClinic'
 import { SectionHero } from 'components/Sections/SectionHero'
 import { SectionInfo } from 'components/Sections/SectionInfo'
+import { SectionInstagram } from 'components/Sections/SectionInstagram'
 import { SectionServices } from 'components/Sections/SectionServices'
 import Head from 'next/head'
 import { HomeContainer, HomeWrapper } from 'styles/home'
@@ -22,6 +23,7 @@ export default function Home() {
           <SectionAbout />
           <SectionClinic />
           <SectionServices />
+          <SectionInstagram />
         </HomeContainer>
       </HomeWrapper>
     </>

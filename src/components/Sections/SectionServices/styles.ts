@@ -15,7 +15,7 @@ export const ServicesWrapper = styled('section', {
 
   '@bp2': {
     paddingTop: '2.5rem',
-    paddingBottom: '3rem',
+    paddingBottom: '5rem',
 
     h1: {
       fontSize: '2rem'
@@ -24,7 +24,6 @@ export const ServicesWrapper = styled('section', {
 
   '@bp3': {
     paddingTop: '1.5rem',
-    paddingBottom: '5rem',
     gap: '5rem',
 
     h1: {
