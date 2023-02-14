@@ -63,7 +63,7 @@ export const StyledText = styled(Slot, {
 
   defaultVariants: {
     size: 'sm',
-    color: 'white',
+    color: 'gray1',
     weight: 'normal'
   }
 })

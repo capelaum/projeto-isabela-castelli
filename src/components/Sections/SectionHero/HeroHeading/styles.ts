@@ -4,6 +4,9 @@ export const HeroHeadingWrapper = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
+  overflow: 'visible',
+
+  // border: '1px solid red',
 
   h2: {
     marginBottom: '0.75rem',
@@ -12,7 +15,18 @@ export const HeroHeadingWrapper = styled('div', {
 
   h1: {
     maxWidth: '650px',
-    width: '100%'
+    width: '100%',
+    position: 'relative',
+    lineHeight: 1.4,
+    zIndex: 3,
+
+    strong: {
+      textDecoration: 'underline',
+      textDecorationStyle: 'dotted',
+      textDecorationThickness: '0.2rem',
+      textDecorationColor: '$secondary',
+      textUnderlineOffset: '0.3em'
+    }
   },
 
   h3: {
@@ -31,6 +45,13 @@ export const HeroHeadingWrapper = styled('div', {
 
     'h1, h2, h3': {
       textAlign: 'center'
+    },
+
+    h1: {
+      background: 'radial-gradient(ellipse at center, $primary 0%, $white 70%)',
+      strong: {
+        textDecoration: 'none'
+      }
     },
 
     h2: {

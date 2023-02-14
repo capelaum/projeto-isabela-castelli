@@ -27,7 +27,7 @@ export const Wrapper = styled('section', {
   right: 0,
   zIndex: 99,
 
-  '@bp1': {
+  '@bp2': {
     padding: '1rem'
   }
 })
