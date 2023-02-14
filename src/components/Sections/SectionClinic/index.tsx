@@ -3,7 +3,7 @@ import { ButtonLink } from 'components/Button/ButtonLink'
 import { Heading } from 'components/Heading'
 import { Text } from 'components/Text'
 import Image from 'next/image'
-import { ChatDots } from 'phosphor-react'
+import { WhatsappLogo } from 'phosphor-react'
 import { ClinicContent, ClinicImageWrapper, ClinicWrapper } from './styles'
 
 export function SectionClinic() {
@@ -15,7 +15,9 @@ export function SectionClinic() {
     <ClinicWrapper>
       <ClinicContent>
         <Heading size="lg" asChild>
-          <h1>O que esperar de seu atendimento</h1>
+          <h1>
+            O que esperar <br /> de seu atendimento
+          </h1>
         </Heading>
 
         <Text asChild>
@@ -30,12 +32,12 @@ export function SectionClinic() {
 
         <ButtonLink
           href={`https://wa.me/5561981668336?text=${message}`}
-          title="Agendar Consulta"
+          title="Agendar consulta!"
           target="_blank"
           size="lg"
         >
-          <ChatDots size={20} weight="bold" />
-          Agendar
+          <WhatsappLogo size={24} weight="regular" />
+          Agendar Consulta
         </ButtonLink>
       </ClinicContent>
 

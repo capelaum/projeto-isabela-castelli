@@ -30,7 +30,7 @@ export function HeroHeading() {
       <ButtonLink
         size="xl"
         href={`https://wa.me/5561981668336?text=${message}`}
-        title="Agendar Consulta"
+        title="Agendar consulta!"
         target="_blank"
       >
         Agendar Consulta

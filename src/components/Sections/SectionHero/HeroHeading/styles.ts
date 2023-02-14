@@ -16,22 +16,22 @@ export const HeroHeadingWrapper = styled('div', {
     width: '100%',
     position: 'relative',
     lineHeight: 1.4,
-    zIndex: 3,
+    zIndex: 3
 
-    strong: {
-      textDecoration: 'underline',
-      textDecorationStyle: 'dotted',
-      textDecorationThickness: '0.2rem',
-      textDecorationColor: '$secondary',
-      textUnderlineOffset: '0.3em'
-    }
+    // strong: {
+    //   textDecoration: 'underline',
+    //   textDecorationStyle: 'dotted',
+    //   textDecorationThickness: '0.2rem',
+    //   textDecorationColor: '$secondary',
+    //   textUnderlineOffset: '0.3em'
+    // }
   },
 
   h3: {
     maxWidth: '450px',
     width: '100%',
     lineHeight: 1.4,
-    marginTop: '2.5rem'
+    marginTop: '1.25rem'
   },
 
   a: {
@@ -46,7 +46,7 @@ export const HeroHeadingWrapper = styled('div', {
     },
 
     h1: {
-      background: 'radial-gradient(ellipse at center, $primary 0%, $white 70%)',
+      // background: 'radial-gradient(ellipse at center, $primary 0%, $white 70%)',
       strong: {
         textDecoration: 'none'
       }

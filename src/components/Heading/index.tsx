@@ -6,7 +6,7 @@ export interface HeadingProps extends HTMLAttributes<HTMLHeadingElement> {
   size?: '2xs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   children: ReactNode
   asChild?: boolean
-  color?: 'black' | 'white'
+  color?: 'black' | 'white' | 'pink'
 }
 
 export function Heading({

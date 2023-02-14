@@ -18,6 +18,8 @@ export const {
       primary: '#EBC7C5',
       secondary: '#CC96A3',
 
+      pink: '#E99AC4',
+
       gray1: '#B3B0B8',
       gray2: '#7C7A80',
       gray3: '#454652',

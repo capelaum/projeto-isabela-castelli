@@ -7,11 +7,9 @@ export const Wrapper = styled('section', {
   alignItems: 'center',
 
   width: '100%',
-  height: '100px',
-  padding: '1rem 1.5rem 1.5rem',
+  padding: '1rem 1.5rem',
 
-  background:
-    'linear-gradient(to bottom, $white, $white, $white, $white, transparent)',
+  background: '$white',
 
   variants: {
     isScrolled: {
@@ -41,7 +39,7 @@ export const Container = styled('nav', {
   maxWidth: '1400px',
 
   img: {
-    width: '200px',
+    width: '180px',
     height: 'auto'
   },
 

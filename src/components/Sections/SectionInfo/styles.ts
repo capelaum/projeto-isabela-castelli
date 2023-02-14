@@ -8,7 +8,7 @@ export const InfoWrapper = styled('section', {
   padding: '3rem 0',
   position: 'relative',
 
-  borderBottom: '1px solid rgba(204, 150, 163, 0.5)',
+  borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
 
   '@bp1': {
     flexDirection: 'column',

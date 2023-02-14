@@ -5,7 +5,9 @@ import { InfotItem, InfoWrapper } from './styles'
 export function SectionInfo() {
   return (
     <InfoWrapper>
-      <Heading size="sm">Atendimentos online e Presencial:</Heading>
+      <Heading size="sm">
+        Atendimentos online <br /> e presencial:
+      </Heading>
 
       <InfotItem>
         <Heading size="md">Consulta Psicologia</Heading>

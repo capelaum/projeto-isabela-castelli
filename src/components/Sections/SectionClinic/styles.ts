@@ -45,7 +45,8 @@ export const ClinicContent = styled('div', {
   width: '40%',
 
   p: {
-    lineHeight: 1.6
+    lineHeight: 1.6,
+    maxWidth: '400px'
   },
 
   '@bp2': {
@@ -56,13 +57,14 @@ export const ClinicContent = styled('div', {
     },
 
     p: {
-      fontSize: '1rem'
+      fontSize: '1rem',
+      maxWidth: 'none'
     }
   },
 
   '@bp3': {
     h1: {
-      fontSize: '1.5rem'
+      fontSize: '1.75rem'
     }
   }
 })

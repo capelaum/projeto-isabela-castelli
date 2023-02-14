@@ -4,5 +4,6 @@ import Doctoralia from 'assets/images/doctoralia.svg'
 import Hero from 'assets/images/hero.png'
 import Instagram from 'assets/images/instagram.svg'
 import Logo from 'assets/images/logo.svg'
+import Services from 'assets/images/services.png'
 
-export { Hero, Logo, Instagram, Doctoralia, About, Clinic }
+export { Hero, Logo, Instagram, Doctoralia, About, Clinic, Services }

@@ -13,6 +13,9 @@ export const StyledHeading = styled(Slot, {
       },
       white: {
         color: '$white'
+      },
+      pink: {
+        color: '$primary'
       }
     },
 

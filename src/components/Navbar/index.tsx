@@ -6,7 +6,7 @@ import { Container, LinksWrapper, NavLink, Wrapper } from './styles'
 
 export function Navbar() {
   const [offsetY, setOffsetY] = useState(0)
-  console.log('💥 ~ offsetY', offsetY)
+  // console.log('💥 ~ offsetY', offsetY)
 
   const handleScroll = () => setOffsetY(window.pageYOffset)
 
