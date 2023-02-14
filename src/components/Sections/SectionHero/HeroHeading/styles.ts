@@ -6,8 +6,6 @@ export const HeroHeadingWrapper = styled('div', {
   alignItems: 'flex-start',
   overflow: 'visible',
 
-  // border: '1px solid red',
-
   h2: {
     marginBottom: '0.75rem',
     paddingLeft: '0.75rem'

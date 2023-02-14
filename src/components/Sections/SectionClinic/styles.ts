@@ -1,10 +1,11 @@
 import { styled } from 'styles/stitches.config'
 
-export const AboutWrapper = styled('section', {
+export const ClinicWrapper = styled('section', {
   display: 'flex',
   alignItems: 'center',
+  justifyContent: 'flex-end',
   gap: '10rem',
-  padding: '7.5rem 0',
+  padding: '2.5rem 0',
   width: '100%',
 
   '@bp1': {
@@ -13,17 +14,17 @@ export const AboutWrapper = styled('section', {
 
   '@bp2': {
     gap: '3.5rem',
-    flexDirection: 'column',
-    paddingTop: '5rem',
-    paddingBottom: '2.5rem'
+    flexDirection: 'column-reverse',
+    paddingTop: '1rem',
+    paddingBottom: '5rem'
   }
 })
 
-export const AboutImageWrapper = styled('div', {
+export const ClinicImageWrapper = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '50%',
+  width: '40%',
 
   img: {
     width: '100%',
@@ -36,37 +37,32 @@ export const AboutImageWrapper = styled('div', {
   }
 })
 
-export const AboutContent = styled('div', {
+export const ClinicContent = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  gap: '3rem',
+  alignItems: 'flex-start',
+  gap: '2.5rem',
   width: '40%',
-
-  '@bp2': {
-    width: '100%',
-
-    h1: {
-      fontSize: '2rem'
-    }
-  }
-})
-
-export const AboutDescription = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '1.5rem',
-  maxWidth: '400px',
 
   p: {
     lineHeight: 1.6
   },
 
   '@bp2': {
-    maxWidth: 'none',
     width: '100%',
+
+    h1: {
+      fontSize: '2rem'
+    },
 
     p: {
       fontSize: '1rem'
+    }
+  },
+
+  '@bp3': {
+    h1: {
+      fontSize: '1.5rem'
     }
   }
 })

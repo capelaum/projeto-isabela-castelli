@@ -55,8 +55,6 @@ export const HeroSocialLink = styled(Link, {
   alignItems: 'center',
   gap: '0.5rem',
 
-  // border: '1px solid red',
-
   textDecoration: 'none',
 
   transition: '$default',

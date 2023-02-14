@@ -1,5 +1,6 @@
 import { Navbar } from 'components/Navbar'
 import { SectionAbout } from 'components/Sections/SectionAbout'
+import { SectionClinic } from 'components/Sections/SectionClinic'
 import { SectionHero } from 'components/Sections/SectionHero'
 import { SectionInfo } from 'components/Sections/SectionInfo'
 import Head from 'next/head'
@@ -18,6 +19,7 @@ export default function Home() {
         <HomeContainer>
           <SectionInfo />
           <SectionAbout />
+          <SectionClinic />
         </HomeContainer>
       </HomeWrapper>
     </>

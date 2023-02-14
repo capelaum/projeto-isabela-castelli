@@ -51,11 +51,10 @@ export const StyledButton = styled('button', {
 
       lg: {
         fontSize: '$lg',
-        padding: '0.75rem 1.75rem',
+        padding: '0.75rem 2.5rem',
 
         '@bp2': {
-          fontSize: '$md',
-          padding: '0.5rem 1rem'
+          fontSize: '$md'
         }
       },
 
