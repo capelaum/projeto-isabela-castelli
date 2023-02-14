@@ -1,10 +1,12 @@
-import { Hero, Logo } from 'components/@constants'
+import { Hero } from 'components/@constants'
+import { ButtonLink } from 'components/Button/ButtonLink'
 import { Heading } from 'components/Heading'
 import { Text } from 'components/Text'
 import Image from 'next/image'
 import {
-  HeroDescription,
+  HeroContainer,
   HeroHeadingWrapper,
+  HeroImageMobileWrapper,
   HeroImageWrapper,
   HeroTextWrapper,
   HeroWrapper
@@ -13,32 +15,41 @@ import {
 export function SectionHero() {
   return (
     <HeroWrapper>
-      <HeroTextWrapper>
-        <Image
-          src={Logo}
-          alt="Logotipo da psicóloga Isabela Castelli, tendo escrito o nome Isabela Castelli e a frase Psicologa Clínica e Hospitalar em rosa claro."
-        />
+      <HeroContainer>
+        <HeroTextWrapper>
+          <HeroHeadingWrapper>
+            <Text weight="semibold" color="black" size="sm">
+              Psicopatologia e Psicodiagnóstico
+            </Text>
 
-        <HeroHeadingWrapper>
-          <Text weight="bold" color="black">
-            Psicopatologia e Psicodiagnóstico
+            <Heading color="black" size="xl" asChild>
+              <h1>A sua saúde mental é prioridade!</h1>
+            </Heading>
+          </HeroHeadingWrapper>
+
+          <Text asChild color="black" size="lg">
+            <p>
+              Um acompanhamento psicológico bem feito vai ajudá-lo a compreender
+              os seus sentimentos, seu modo de pensar e de agir.
+            </p>
           </Text>
 
-          <Heading color="black" size="xl" asChild>
-            <h1>A sua saúde mental é prioridade!</h1>
-          </Heading>
-        </HeroHeadingWrapper>
+          <ButtonLink href="#" size="xl" title="Agendar Consulta">
+            Agendar Consulta
+          </ButtonLink>
+        </HeroTextWrapper>
+      </HeroContainer>
 
-        <HeroDescription asChild color="black" size="lg">
-          <p>
-            Um acompanhamento psicológico bem feito vai ajudá-lo a compreender
-            os seus sentimentos, seu modo de pensar e de agir.
-          </p>
-        </HeroDescription>
-      </HeroTextWrapper>
+      <HeroImageMobileWrapper>
+        <Image
+          src={Hero}
+          alt="Foto profissional da psicóloga Isabela castelli"
+        />
+      </HeroImageMobileWrapper>
 
       <HeroImageWrapper>
         <Image
+          priority
           src={Hero}
           alt="Foto profissional da psicóloga Isabela castelli"
         />

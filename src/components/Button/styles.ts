@@ -12,7 +12,8 @@ export const StyledButton = styled('button', {
   fontWeight: '$medium',
 
   transition: '$fast',
-  // alignSelf: 'stretch',
+  textAlign: 'center',
+  lineHeight: 1.6,
 
   '&:disabled': {
     opacity: 0.7,
@@ -22,32 +23,50 @@ export const StyledButton = styled('button', {
   variants: {
     color: {
       pink: {
-        backgroundColor: '$primary',
+        backgroundColor: '$secondary',
         color: '$white',
 
         '&:not(:disabled):hover': {
-          filter: 'brightness(0.9)'
+          filter: 'brightness(1.1)'
         }
       }
     },
 
     size: {
       sm: {
-        fontSize: '$xs',
+        fontSize: '$sm',
         padding: '0.5rem 1rem',
         gap: '0.5rem'
       },
+
       md: {
-        fontSize: '$sm',
-        padding: '0.75rem 1rem'
+        fontSize: '$md',
+        padding: '0.75rem 1rem',
+
+        '@bp2': {
+          fontSize: '$sm',
+          padding: '0.5rem 1rem'
+        }
       },
+
       lg: {
-        fontSize: '$sm',
-        padding: '0.75rem 1.75rem'
+        fontSize: '$lg',
+        padding: '0.75rem 1.75rem',
+
+        '@bp2': {
+          fontSize: '$md',
+          padding: '0.5rem 1rem'
+        }
       },
+
       xl: {
-        fontSize: '$sm',
-        padding: '0.75rem 2.5rem'
+        fontSize: '$xl',
+        padding: '1rem 2rem',
+
+        '@bp2': {
+          fontSize: '$lg',
+          padding: '0.75rem 1.5rem'
+        }
       }
     },
 

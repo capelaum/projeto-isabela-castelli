@@ -16,7 +16,8 @@ export const globalStyles = globalCss({
     color: '$white',
     fontFamily: '$inter',
     fontWeight: 400,
-    '-webkit-font-smoothing': 'antialised'
+    '-webkit-font-smoothing': 'antialised',
+    position: 'relative'
   },
 
   'a, button': {
