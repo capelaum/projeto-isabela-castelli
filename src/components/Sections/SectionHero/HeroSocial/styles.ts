@@ -42,7 +42,7 @@ export const HeroSocialLinks = styled('div', {
   }
 })
 
-const shake = keyframes({
+export const shake = keyframes({
   '0%': { transform: 'rotate(0deg)' },
   '25%': { transform: 'rotate(10deg)' },
   '50%': { transform: 'rotate(0deg)' },

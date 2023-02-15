@@ -5,12 +5,24 @@ interface TextLinkProps extends TextProps {
   href: string
   title: string
   children: string
+  target?: '_blank'
 }
 
-export function TextLink({ href, title, children, ...props }: TextLinkProps) {
+export function TextLink({
+  href,
+  title,
+  children,
+  target,
+  ...props
+}: TextLinkProps) {
   return (
     <Text {...props} asChild>
-      <StyledLink href={href} title={title}>
+      <StyledLink
+        target={target}
+        href={href}
+        title={title}
+        rel={target ? 'noreferrer noopener' : null}
+      >
         {children}
       </StyledLink>
     </Text>

@@ -1,3 +1,4 @@
+import { Footer } from 'components/Footer'
 import { Navbar } from 'components/Navbar'
 import { SectionAbout } from 'components/Sections/SectionAbout'
 import { SectionClinic } from 'components/Sections/SectionClinic'
@@ -30,6 +31,8 @@ export default function Home() {
         <SectionTestimonials />
         <SectionFinal />
       </HomeMain>
+
+      <Footer />
     </>
   )
 }

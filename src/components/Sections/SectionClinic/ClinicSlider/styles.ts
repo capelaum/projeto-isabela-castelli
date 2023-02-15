@@ -43,6 +43,7 @@ export const ClinicImageWrapper = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   height: '500px',
+  width: '100%',
 
   img: {
     width: '100%',
