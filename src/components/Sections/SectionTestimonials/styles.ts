@@ -11,7 +11,7 @@ export const TestimonialsWrapper = styled('section', {
   padding: '5rem 0',
 
   '@bp2': {
-    padding: '2.5rem 0'
+    padding: '2.5rem 1.25rem'
   }
 })
 

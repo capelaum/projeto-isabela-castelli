@@ -26,6 +26,12 @@ export function TestimonialsSlider() {
     },
     loop: true,
     breakpoints: {
+      '(min-width: 2000px)': {
+        slides: {
+          perView: 4,
+          spacing: 24
+        }
+      },
       '(max-width: 768px)': {
         slides: {
           perView: 1,
