@@ -139,7 +139,7 @@ export const TestimonialCard = styled('div', {
   flexDirection: 'column',
   gap: '4rem',
   borderRadius: '$default',
-  padding: '3.5rem',
+  padding: '5rem 3.5rem',
 
   background: '$black',
 
@@ -150,7 +150,7 @@ export const TestimonialCard = styled('div', {
 
   '@bp3': {
     gap: '2rem',
-    padding: '2.5rem',
+    padding: '4rem 2.5rem',
 
     p: {
       fontSize: '$sm'

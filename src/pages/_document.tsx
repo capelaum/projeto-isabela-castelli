@@ -1,13 +1,13 @@
+import { Favicon } from 'components/Head/Favicon'
+import { SEO } from 'components/Head/SEO'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import { getCssText } from 'styles/stitches.config'
 
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="pt-BR">
         <Head>
-          <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
           <link rel="preconnect" href="https://fonts.googleapis.com" />
 
           <link
@@ -24,6 +24,14 @@ export default class MyDocument extends Document {
           <style
             id="stitches"
             dangerouslySetInnerHTML={{ __html: getCssText() }}
+          />
+
+          <Favicon />
+
+          <SEO
+            title="Isabela Castelli - Psicologia Clínica e Hospitalar"
+            description="A sua saúde mental é prioridade! Um acompanhamento psicológico bem feito vai ajudá-lo a compreender os seus sentimentos, seu modo de pensar e de agir."
+            url="https://isbaelacastelli.com.br"
           />
         </Head>
         <body>

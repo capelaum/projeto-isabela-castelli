@@ -17,18 +17,25 @@ export default function Home() {
         <title>Psicóloga Isabela Castelli</title>
       </Head>
 
-      <Navbar />
-      <SectionHero />
-      <HomeWrapper>
-        <HomeContainer>
-          <SectionInfo />
-          <SectionAbout />
-          <SectionClinic />
-          <SectionServices />
-          <SectionInstagram />
-        </HomeContainer>
-      </HomeWrapper>
-      <SectionTestimonials />
+      <header>
+        <Navbar />
+      </header>
+
+      <main>
+        <SectionHero />
+
+        <HomeWrapper>
+          <HomeContainer>
+            <SectionInfo />
+            <SectionAbout />
+            <SectionClinic />
+            <SectionServices />
+            <SectionInstagram />
+          </HomeContainer>
+        </HomeWrapper>
+
+        <SectionTestimonials />
+      </main>
     </>
   )
 }

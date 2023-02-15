@@ -7,7 +7,7 @@ export const InstaWrapper = styled('section', {
   justifyContent: 'center',
   gap: '2rem',
   width: '100%',
-  paddingBottom: '5rem',
+  paddingBottom: '2.5rem',
 
   '.wx-widget-container': {
     border: '1px solid red',
