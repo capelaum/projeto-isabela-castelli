@@ -4,8 +4,15 @@ import Gallery3 from 'assets/images/gallery/gallery-3.png'
 import Gallery4 from 'assets/images/gallery/gallery-4.png'
 import Gallery6 from 'assets/images/gallery/gallery-6.png'
 import Gallery7 from 'assets/images/gallery/gallery-7.png'
+import { StaticImageData } from 'next/image'
 
-export const gallery = [
+type GalleryItem = {
+  id: number
+  src: StaticImageData
+  alt: string
+}
+
+export const gallery: GalleryItem[] = [
   {
     id: 1,
     src: Gallery1,
