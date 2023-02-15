@@ -1,4 +1,4 @@
-import { Profile } from 'components/@constants'
+import { InstaProfile } from 'components/@constants'
 import { Heading } from 'components/Heading'
 import Image from 'next/image'
 import Script from 'next/script'
@@ -15,7 +15,7 @@ export function SectionInstagram() {
       >
         <InstaProfileImageWrapper>
           <Image
-            src={Profile}
+            src={InstaProfile}
             alt="Imagem de perfil do instagram da Isabela Castelli."
           />
         </InstaProfileImageWrapper>
