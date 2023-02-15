@@ -26,9 +26,9 @@ export default function Home() {
           <SectionClinic />
           <SectionServices />
           <SectionInstagram />
-          <SectionTestimonials />
         </HomeContainer>
       </HomeWrapper>
+      <SectionTestimonials />
     </>
   )
 }
