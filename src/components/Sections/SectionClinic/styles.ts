@@ -20,23 +20,6 @@ export const ClinicWrapper = styled('section', {
   }
 })
 
-export const ClinicImageWrapper = styled('div', {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '40%',
-
-  img: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover'
-  },
-
-  '@bp2': {
-    width: '100%'
-  }
-})
-
 export const ClinicContent = styled('div', {
   display: 'flex',
   flexDirection: 'column',

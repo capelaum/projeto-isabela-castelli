@@ -2,6 +2,8 @@ import { Quotes } from 'phosphor-react'
 import { styled } from 'styles/stitches.config'
 
 export const TestimonialsSliderContainer = styled('div', {
+  display: 'flex',
+  cursor: 'grab',
   width: '100%',
   position: 'relative',
 
@@ -18,9 +20,6 @@ export const TestimonialsSliderContainer = styled('div', {
     background:
       'linear-gradient(to right, $black 0%, transparent 25%, transparent 75%, $black 100%)'
   },
-
-  display: 'flex',
-  cursor: 'grab',
 
   '@bp2': {
     '&:after': {
