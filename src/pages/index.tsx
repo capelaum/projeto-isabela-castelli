@@ -1,6 +1,7 @@
 import { Navbar } from 'components/Navbar'
 import { SectionAbout } from 'components/Sections/SectionAbout'
 import { SectionClinic } from 'components/Sections/SectionClinic'
+import { SectionFinal } from 'components/Sections/SectionFinal'
 import { SectionHero } from 'components/Sections/SectionHero'
 import { SectionInfo } from 'components/Sections/SectionInfo'
 import { SectionInstagram } from 'components/Sections/SectionInstagram'
@@ -36,6 +37,12 @@ export default function Home() {
         <SectionInstagram />
 
         <SectionTestimonials />
+
+        <HomeWrapper>
+          <HomeContainer>
+            <SectionFinal />
+          </HomeContainer>
+        </HomeWrapper>
       </main>
     </>
   )
