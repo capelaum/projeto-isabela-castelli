@@ -30,9 +30,10 @@ export default function Home() {
             <SectionAbout />
             <SectionClinic />
             <SectionServices />
-            <SectionInstagram />
           </HomeContainer>
         </HomeWrapper>
+
+        <SectionInstagram />
 
         <SectionTestimonials />
       </main>

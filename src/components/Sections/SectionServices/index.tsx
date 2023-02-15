@@ -3,6 +3,7 @@ import { Heading } from 'components/Heading'
 import { Text } from 'components/Text'
 import Image from 'next/image'
 import {
+  PinkGradient,
   ServiceItem,
   ServicesContainer,
   ServicesImageWrapper,
@@ -72,6 +73,8 @@ export function SectionServices() {
           </ServiceItem>
         </ServicesList>
       </ServicesContainer>
+
+      <PinkGradient />
     </ServicesWrapper>
   )
 }
