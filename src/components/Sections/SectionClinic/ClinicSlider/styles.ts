@@ -6,8 +6,6 @@ export const ClinicSliderWrapper = styled('div', {
   borderRadius: '$lg',
   overflow: 'hidden',
 
-  // border: '2px solid $gray2',
-
   '@bp2': {
     width: '100%'
   }

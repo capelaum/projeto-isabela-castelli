@@ -7,7 +7,6 @@ export const InfoWrapper = styled('section', {
   width: '100%',
   maxWidth: '1448px',
 
-  // border: '1px solid red',
   borderBottom: '1px solid rgba(255, 255, 255, .1)',
 
   '@bp2': {

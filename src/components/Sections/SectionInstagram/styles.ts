@@ -9,7 +9,6 @@ export const InstaWrapper = styled('section', {
   width: '100%',
 
   '.wx-widget-container': {
-    border: '1px solid red',
     maxWidth: 'none !important'
   },
 

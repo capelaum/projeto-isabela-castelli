@@ -1,10 +1,10 @@
 import { ButtonLink } from 'components/Button/ButtonLink'
 import { Heading } from 'components/Heading'
-import { SectionContainer } from 'components/SectionContainer'
+import { PinkGradient } from 'components/PinkGradient'
 import { Text } from 'components/Text'
 import { WhatsappLogo } from 'phosphor-react'
 import { ClinicSlider } from './ClinicSlider'
-import { ClinicContent, ClinicWrapper } from './styles'
+import { ClinicContainer, ClinicContent, ClinicWrapper } from './styles'
 
 export function SectionClinic() {
   const message = encodeURIComponent(
@@ -12,8 +12,8 @@ export function SectionClinic() {
   )
 
   return (
-    <SectionContainer>
-      <ClinicWrapper id="consultorio">
+    <ClinicWrapper id="consultorio">
+      <ClinicContainer>
         <ClinicContent>
           <Heading size="lg" asChild>
             <h1>
@@ -43,7 +43,8 @@ export function SectionClinic() {
         </ClinicContent>
 
         <ClinicSlider />
-      </ClinicWrapper>
-    </SectionContainer>
+      </ClinicContainer>
+      <PinkGradient />
+    </ClinicWrapper>
   )
 }

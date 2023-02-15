@@ -9,7 +9,6 @@ export const TestimonialsWrapper = styled('section', {
   width: '100%',
 
   padding: '5rem 0',
-  // border: '1px solid red',
 
   '@bp2': {
     padding: '2.5rem 0'

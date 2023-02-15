@@ -7,8 +7,6 @@ export const TestimonialsSliderContainer = styled('div', {
   width: '100%',
   position: 'relative',
 
-  // border: '1px solid red',
-
   '&:after': {
     content: '""',
     position: 'absolute',

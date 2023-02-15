@@ -2,10 +2,20 @@ import { styled } from 'styles/stitches.config'
 
 export const ClinicWrapper = styled('section', {
   display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  position: 'relative',
+  width: '100%'
+})
+
+export const ClinicContainer = styled('section', {
+  display: 'flex',
   alignItems: 'center',
   justifyContent: 'flex-end',
   gap: '10rem',
   width: '100%',
+  maxWidth: '1448px',
+  padding: '5rem 1.5rem',
 
   '@bp1': {
     gap: '5rem'
@@ -13,7 +23,8 @@ export const ClinicWrapper = styled('section', {
 
   '@bp2': {
     gap: '3.5rem',
-    flexDirection: 'column-reverse'
+    flexDirection: 'column-reverse',
+    padding: '2.5rem 1.25rem'
   }
 })
 
