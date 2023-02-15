@@ -13,7 +13,7 @@ export function SEO({ title, description, url }: SeoProps) {
 
       <meta name="title" content={title} />
       <meta name="description" content={description} />
-      <meta name="theme-color" content="#282C4D" />
+      <meta name="theme-color" content="#CC96A3" />
 
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
@@ -21,7 +21,7 @@ export function SEO({ title, description, url }: SeoProps) {
       <meta property="og:description" content={description} />
       <meta property="og:site_name" content={title} />
       <meta property="og:locale" content="pt_BR" />
-      <meta property="og:image" itemProp="image" content="/images/Capa.png" />
+      <meta property="og:image" itemProp="image" content="/Capa.png" />
       <meta property="og:image:type" content="image/png" />
 
       <meta name="twitter:url" content={url} />
