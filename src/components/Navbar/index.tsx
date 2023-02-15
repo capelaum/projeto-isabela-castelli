@@ -19,7 +19,7 @@ export function Navbar() {
   return (
     <Wrapper isScrolled={offsetY > 0}>
       <Container>
-        <Link href="#" title="Início" passHref>
+        <Link href="#inicio" title="Início" scroll={false}>
           <Image
             src={Logo}
             alt="Logotipo da psicóloga Isabela Castelli, tendo escrito o nome Isabela Castelli e a frase Psicologa Clínica e Hospitalar em rosa claro."
@@ -27,19 +27,19 @@ export function Navbar() {
         </Link>
 
         <LinksWrapper>
-          <NavLink href="#" title="Sobre">
+          <NavLink href="#sobre" title="Sobre" scroll={false}>
             Sobre
           </NavLink>
 
-          <NavLink href="#" title="Serviços">
-            Serviços
-          </NavLink>
-
-          <NavLink href="#" title="Consultório">
+          <NavLink href="#consultorio" title="Consultório" scroll={false}>
             Consultório
           </NavLink>
 
-          <NavLink href="#" title="Depoimentos">
+          <NavLink href="#servicos" title="Serviços" scroll={false}>
+            Serviços
+          </NavLink>
+
+          <NavLink href="#depoimentos" title="Depoimentos" scroll={false}>
             Depoimentos
           </NavLink>
         </LinksWrapper>

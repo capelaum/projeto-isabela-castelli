@@ -13,7 +13,7 @@ import {
 
 export function SectionServices() {
   return (
-    <ServicesWrapper>
+    <ServicesWrapper id="servicos">
       <Heading asChild size="md">
         <h1>
           A Terapia não é um local de julgamento, mas sim de aconchego,

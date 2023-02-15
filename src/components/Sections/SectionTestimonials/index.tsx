@@ -5,7 +5,7 @@ import { TestimonialsSlider } from './TestimonialsSlider'
 
 export function SectionTestimonials() {
   return (
-    <TestimonialsWrapper>
+    <TestimonialsWrapper id="depoimentos">
       <TestimonialsHeader>
         <StyledQuotes size={32} weight="fill" />
 

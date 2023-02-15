@@ -11,7 +11,7 @@ export function SectionClinic() {
   )
 
   return (
-    <ClinicWrapper>
+    <ClinicWrapper id="consultorio">
       <ClinicContent>
         <Heading size="lg" asChild>
           <h1>

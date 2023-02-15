@@ -8,7 +8,8 @@ export const globalStyles = globalCss({
   },
 
   html: {
-    scrollBehavior: 'smooth'
+    scrollBehavior: 'smooth',
+    scrollPaddingTop: '6rem'
   },
 
   body: {
@@ -17,7 +18,31 @@ export const globalStyles = globalCss({
     fontFamily: '$inter',
     fontWeight: 400,
     '-webkit-font-smoothing': 'antialised',
-    position: 'relative'
+    position: 'relative',
+
+    scrollbarWidth: 'thin',
+    scrollbarColor: '$primary $primary',
+
+    '&::-webkit-scrollbar': {
+      background: '$gray6',
+      width: '10px',
+
+      '&:hover': {
+        background: '$black',
+        width: '10px'
+      }
+    },
+
+    '&::-webkit-scrollbar-thumb': {
+      background: '$secondary',
+      borderRadius: '50px',
+      width: '10px',
+
+      '&:hover': {
+        background: '$primary',
+        width: '10px'
+      }
+    }
   },
 
   'a, button': {

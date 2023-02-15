@@ -12,7 +12,7 @@ import {
 
 export function SectionHero() {
   return (
-    <HeroWrapper>
+    <HeroWrapper id="inicio">
       <HeroContainer>
         <HeroContentWrapper>
           <HeroHeading />

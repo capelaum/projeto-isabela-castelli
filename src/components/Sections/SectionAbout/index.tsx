@@ -11,7 +11,7 @@ import {
 
 export function SectionAbout() {
   return (
-    <AboutWrapper>
+    <AboutWrapper id="sobre">
       <AboutImageWrapper>
         <Image
           src={About}
