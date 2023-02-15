@@ -2,7 +2,17 @@ import { styled } from 'styles/stitches.config'
 
 export const InfoWrapper = styled('section', {
   display: 'flex',
-  flexDirection: 'column'
+  flexDirection: 'column',
+  padding: '2.5rem 1.5rem',
+  width: '100%',
+  maxWidth: '1448px',
+
+  // border: '1px solid red',
+  borderBottom: '1px solid rgba(255, 255, 255, .1)',
+
+  '@bp2': {
+    padding: '2.5rem 1.25rem'
+  }
 })
 
 export const InfoContent = styled('div', {
@@ -10,7 +20,6 @@ export const InfoContent = styled('div', {
   justifyContent: 'flex-start',
   alignItems: 'center',
   gap: '10rem',
-  padding: '3rem 0',
   position: 'relative',
 
   '@bp1': {
@@ -88,19 +97,5 @@ export const InfotItem = styled('div', {
       paddingLeft: '0rem',
       borderLeft: 'none'
     }
-  }
-})
-
-export const InfoDivider = styled('hr', {
-  background:
-    'linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.1) 5%, rgba(255, 255, 255, 0.1) 95%, transparent 100%)',
-  opacity: 0.7,
-  height: '1px',
-  width: '100%',
-  border: 'none',
-
-  '@bp1': {
-    background:
-      'linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.1) 5%, rgba(255, 255, 255, 0.1) 95%, transparent 100%)'
   }
 })

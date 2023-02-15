@@ -1,12 +1,6 @@
 import { Heading } from 'components/Heading'
 import { Text } from 'components/Text'
-import {
-  InfoContent,
-  InfoDivider,
-  InfotItem,
-  InfotItems,
-  InfoWrapper
-} from './styles'
+import { InfoContent, InfotItem, InfotItems, InfoWrapper } from './styles'
 
 export function SectionInfo() {
   return (
@@ -28,8 +22,6 @@ export function SectionInfo() {
           </InfotItem>
         </InfotItems>
       </InfoContent>
-
-      <InfoDivider />
     </InfoWrapper>
   )
 }

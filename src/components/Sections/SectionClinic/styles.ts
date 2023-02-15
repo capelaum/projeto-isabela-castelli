@@ -5,7 +5,6 @@ export const ClinicWrapper = styled('section', {
   alignItems: 'center',
   justifyContent: 'flex-end',
   gap: '10rem',
-  padding: '2.5rem 0',
   width: '100%',
 
   '@bp1': {
@@ -14,9 +13,7 @@ export const ClinicWrapper = styled('section', {
 
   '@bp2': {
     gap: '3.5rem',
-    flexDirection: 'column-reverse',
-    paddingTop: '1rem',
-    paddingBottom: '5rem'
+    flexDirection: 'column-reverse'
   }
 })
 

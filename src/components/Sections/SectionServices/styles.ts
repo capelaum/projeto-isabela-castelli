@@ -5,8 +5,8 @@ export const ServicesWrapper = styled('section', {
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
+  position: 'relative',
   gap: '7.5rem',
-  padding: '10rem 0',
 
   h1: {
     textAlign: 'center',
@@ -14,16 +14,12 @@ export const ServicesWrapper = styled('section', {
   },
 
   '@bp2': {
-    paddingTop: '2.5rem',
-    paddingBottom: '5rem',
-
     h1: {
       fontSize: '2rem'
     }
   },
 
   '@bp3': {
-    paddingTop: '1.5rem',
     gap: '5rem',
 
     h1: {
@@ -126,21 +122,5 @@ export const ServiceItem = styled('li', {
     '&:last-child': {
       borderRadius: '0 0 $lg $lg'
     }
-  }
-})
-
-export const PinkGradient = styled('div', {
-  position: 'absolute',
-  bottom: -300,
-  left: 0,
-  width: '40%',
-  height: '800px',
-  zIndex: -1,
-
-  background:
-    'radial-gradient(circle at left center, rgba(235, 199, 197, .5) 0%,transparent 50%, transparent 100%)',
-
-  '@bp2': {
-    display: 'none'
   }
 })

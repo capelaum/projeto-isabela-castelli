@@ -9,7 +9,7 @@ import { SectionServices } from 'components/Sections/SectionServices'
 import { SectionTestimonials } from 'components/Sections/SectionTestimonials'
 import 'keen-slider/keen-slider.min.css'
 import Head from 'next/head'
-import { HomeContainer, HomeWrapper } from 'styles/home'
+import { HomeMain } from 'styles/home'
 
 export default function Home() {
   return (
@@ -18,32 +18,18 @@ export default function Home() {
         <title>Psicóloga Isabela Castelli</title>
       </Head>
 
-      <header>
-        <Navbar />
-      </header>
+      <Navbar />
 
-      <main>
+      <HomeMain>
         <SectionHero />
-
-        <HomeWrapper>
-          <HomeContainer>
-            <SectionInfo />
-            <SectionAbout />
-            <SectionClinic />
-            <SectionServices />
-          </HomeContainer>
-        </HomeWrapper>
-
+        <SectionInfo />
+        <SectionAbout />
+        <SectionClinic />
+        <SectionServices />
         <SectionInstagram />
-
         <SectionTestimonials />
-
-        <HomeWrapper>
-          <HomeContainer>
-            <SectionFinal />
-          </HomeContainer>
-        </HomeWrapper>
-      </main>
+        <SectionFinal />
+      </HomeMain>
     </>
   )
 }

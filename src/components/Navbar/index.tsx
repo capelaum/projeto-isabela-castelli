@@ -17,33 +17,35 @@ export function Navbar() {
   }, [])
 
   return (
-    <Wrapper isScrolled={offsetY > 0}>
-      <Container>
-        <Link href="#inicio" title="Início" scroll={false}>
-          <Image
-            src={Logo}
-            alt="Logotipo da psicóloga Isabela Castelli, tendo escrito o nome Isabela Castelli e a frase Psicologa Clínica e Hospitalar em rosa claro."
-          />
-        </Link>
+    <header>
+      <Wrapper isScrolled={offsetY > 0}>
+        <Container>
+          <Link href="#inicio" title="Início" scroll={false}>
+            <Image
+              src={Logo}
+              alt="Logotipo da psicóloga Isabela Castelli, tendo escrito o nome Isabela Castelli e a frase Psicologa Clínica e Hospitalar em rosa claro."
+            />
+          </Link>
 
-        <LinksWrapper>
-          <NavLink href="#sobre" title="Sobre" scroll={false}>
-            Sobre
-          </NavLink>
+          <LinksWrapper>
+            <NavLink href="#sobre" title="Sobre" scroll={false}>
+              Sobre
+            </NavLink>
 
-          <NavLink href="#consultorio" title="Consultório" scroll={false}>
-            Consultório
-          </NavLink>
+            <NavLink href="#consultorio" title="Consultório" scroll={false}>
+              Consultório
+            </NavLink>
 
-          <NavLink href="#servicos" title="Serviços" scroll={false}>
-            Serviços
-          </NavLink>
+            <NavLink href="#servicos" title="Serviços" scroll={false}>
+              Serviços
+            </NavLink>
 
-          <NavLink href="#depoimentos" title="Depoimentos" scroll={false}>
-            Depoimentos
-          </NavLink>
-        </LinksWrapper>
-      </Container>
-    </Wrapper>
+            <NavLink href="#depoimentos" title="Depoimentos" scroll={false}>
+              Depoimentos
+            </NavLink>
+          </LinksWrapper>
+        </Container>
+      </Wrapper>
+    </header>
   )
 }

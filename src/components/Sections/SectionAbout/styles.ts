@@ -4,7 +4,6 @@ export const AboutWrapper = styled('section', {
   display: 'flex',
   alignItems: 'center',
   gap: '10rem',
-  padding: '7.5rem 0',
   width: '100%',
 
   '@bp1': {

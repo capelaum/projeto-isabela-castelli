@@ -5,7 +5,6 @@ export const FinalWrapper = styled('section', {
   alignItems: 'center',
   justifyContent: 'space-between',
   gap: '10rem',
-  padding: '5rem 0',
   width: '100%',
 
   '@bp1': {
@@ -14,9 +13,7 @@ export const FinalWrapper = styled('section', {
 
   '@bp2': {
     gap: '3.5rem',
-    flexDirection: 'column',
-    paddingTop: '5rem',
-    paddingBottom: '5rem'
+    flexDirection: 'column'
   }
 })
 

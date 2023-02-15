@@ -6,19 +6,13 @@ export const TestimonialsWrapper = styled('section', {
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  padding: '5rem 0',
   width: '100%',
 
-  '@bp1': {
-    // padding: '5rem 1.5rem'
-  },
+  padding: '5rem 0',
+  // border: '1px solid red',
 
   '@bp2': {
-    padding: '2.5rem 1.5rem'
-  },
-
-  '@bp3': {
-    padding: '1rem 1rem'
+    padding: '2.5rem 0'
   }
 })
 
