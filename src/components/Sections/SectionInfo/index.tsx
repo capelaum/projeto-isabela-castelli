@@ -12,7 +12,7 @@ export function SectionInfo() {
 
         <InfotItems>
           <InfotItem>
-            <Heading size="md">Consulta Psicologia</Heading>
+            <Heading size="md">Consulta Psicológica</Heading>
             <Text color="gray1">Presencial em consultório</Text>
           </InfotItem>
 
