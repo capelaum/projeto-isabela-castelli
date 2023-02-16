@@ -1,13 +1,15 @@
 import Link from 'next/link'
 import { styled } from 'styles/stitches.config'
 
-export const Wrapper = styled('section', {
+export const NavbarWrapper = styled('header', {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
 
   width: '100%',
   padding: '1rem 1.5rem',
+
+  // border: '1px solid red',
 
   background: '$white',
 
@@ -23,14 +25,14 @@ export const Wrapper = styled('section', {
   top: 0,
   left: 0,
   right: 0,
-  zIndex: 99,
+  zIndex: 4,
 
   '@bp2': {
     padding: '1rem'
   }
 })
 
-export const Container = styled('nav', {
+export const NavbarContainer = styled('nav', {
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
@@ -44,15 +46,18 @@ export const Container = styled('nav', {
   },
 
   '@bp2': {
-    flexDirection: 'column',
-    alignItems: 'center'
+    // flexDirection: 'column',
+    // alignItems: 'center'
   }
 })
 
 export const LinksWrapper = styled('div', {
   display: 'flex',
   gap: '2.5rem',
-  flexWrap: 'wrap'
+
+  '@bp2': {
+    display: 'none'
+  }
 })
 
 export const NavLink = styled(Link, {

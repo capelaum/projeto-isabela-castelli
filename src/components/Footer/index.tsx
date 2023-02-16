@@ -26,31 +26,23 @@ export function Footer() {
         <FooterContent>
           <FooterLeft>
             <FooterNav>
-              <FooterNavLink href="#inicio" title="Início" scroll={false}>
+              <FooterNavLink href="#inicio" scroll={false}>
                 Início
               </FooterNavLink>
 
-              <FooterNavLink href="#sobre" title="Sobre" scroll={false}>
+              <FooterNavLink href="#sobre" scroll={false}>
                 Sobre
               </FooterNavLink>
 
-              <FooterNavLink
-                href="#consultorio"
-                title="Consultório"
-                scroll={false}
-              >
+              <FooterNavLink href="#consultorio" scroll={false}>
                 Consultório
               </FooterNavLink>
 
-              <FooterNavLink href="#servicos" title="Serviços" scroll={false}>
+              <FooterNavLink href="#servicos" scroll={false}>
                 Serviços
               </FooterNavLink>
 
-              <FooterNavLink
-                href="#depoimentos"
-                title="Depoimentos"
-                scroll={false}
-              >
+              <FooterNavLink href="#depoimentos" scroll={false}>
                 Depoimentos
               </FooterNavLink>
             </FooterNav>

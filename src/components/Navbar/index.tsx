@@ -2,7 +2,8 @@ import { Logo } from 'components/@constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { Container, LinksWrapper, NavLink, Wrapper } from './styles'
+import { NavbarDropdownMenu } from './NavbarDropdownMenu'
+import { LinksWrapper, NavbarContainer, NavbarWrapper, NavLink } from './styles'
 
 export function Navbar() {
   const [offsetY, setOffsetY] = useState(0)
@@ -17,35 +18,35 @@ export function Navbar() {
   }, [])
 
   return (
-    <header>
-      <Wrapper isScrolled={offsetY > 0}>
-        <Container>
-          <Link href="#inicio" title="Início" scroll={false}>
-            <Image
-              src={Logo}
-              alt="Logotipo da psicóloga Isabela Castelli, tendo escrito o nome Isabela Castelli e a frase Psicologa Clínica e Hospitalar em rosa claro."
-            />
-          </Link>
+    <NavbarWrapper isScrolled={offsetY > 0}>
+      <NavbarContainer>
+        <Link href="#inicio" title="Início" scroll={false}>
+          <Image
+            src={Logo}
+            alt="Logotipo da psicóloga Isabela Castelli, tendo escrito o nome Isabela Castelli e a frase Psicologa Clínica e Hospitalar em rosa claro."
+          />
+        </Link>
 
-          <LinksWrapper>
-            <NavLink href="#sobre" title="Sobre" scroll={false}>
-              Sobre
-            </NavLink>
+        <LinksWrapper>
+          <NavLink href="#sobre" scroll={false}>
+            Sobre
+          </NavLink>
 
-            <NavLink href="#consultorio" title="Consultório" scroll={false}>
-              Consultório
-            </NavLink>
+          <NavLink href="#consultorio" scroll={false}>
+            Consultório
+          </NavLink>
 
-            <NavLink href="#servicos" title="Serviços" scroll={false}>
-              Serviços
-            </NavLink>
+          <NavLink href="#servicos" scroll={false}>
+            Serviços
+          </NavLink>
 
-            <NavLink href="#depoimentos" title="Depoimentos" scroll={false}>
-              Depoimentos
-            </NavLink>
-          </LinksWrapper>
-        </Container>
-      </Wrapper>
-    </header>
+          <NavLink href="#depoimentos" scroll={false}>
+            Depoimentos
+          </NavLink>
+        </LinksWrapper>
+
+        <NavbarDropdownMenu />
+      </NavbarContainer>
+    </NavbarWrapper>
   )
 }

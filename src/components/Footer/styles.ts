@@ -6,12 +6,13 @@ export const FooterWrapper = styled('footer', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  padding: '5rem 1.5rem',
-  paddingBottom: '2rem',
+  padding: '2.5rem 1.5rem',
+  paddingBottom: '1.25rem',
+  background: '$gray6',
 
   '@bp2': {
     padding: '2.5rem 1.25rem',
-    paddingBottom: '2rem'
+    paddingBottom: '1.25rem'
   }
 })
 
@@ -25,12 +26,11 @@ export const FooterContainer = styled('footer', {
 export const FooterContent = styled('div', {
   display: 'flex',
   justifyContent: 'space-between',
-  alignItems: 'center',
-
-  // border: '1px solid red',
+  alignItems: 'flex-start',
 
   '@bp3': {
-    flexDirection: 'column-reverse'
+    flexDirection: 'column-reverse',
+    alignItems: 'center'
   }
 })
 
