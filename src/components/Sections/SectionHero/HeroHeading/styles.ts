@@ -17,17 +17,9 @@ export const HeroHeadingWrapper = styled('div', {
     position: 'relative',
     lineHeight: 1.4,
     zIndex: 3
-
-    // strong: {
-    //   textDecoration: 'underline',
-    //   textDecorationStyle: 'dotted',
-    //   textDecorationThickness: '0.2rem',
-    //   textDecorationColor: '$secondary',
-    //   textUnderlineOffset: '0.3em'
-    // }
   },
 
-  h3: {
+  p: {
     maxWidth: '450px',
     width: '100%',
     lineHeight: 1.4,
@@ -41,12 +33,11 @@ export const HeroHeadingWrapper = styled('div', {
   '@bp1': {
     alignItems: 'center',
 
-    'h1, h2, h3': {
+    'h1, h2, p': {
       textAlign: 'center'
     },
 
     h1: {
-      // background: 'radial-gradient(ellipse at center, $primary 0%, $white 70%)',
       strong: {
         textDecoration: 'none'
       }
@@ -67,7 +58,7 @@ export const HeroHeadingWrapper = styled('div', {
       maxWidth: '450px'
     },
 
-    h3: {
+    p: {
       fontSize: '$md',
       maxWidth: '450px'
     }
@@ -83,7 +74,7 @@ export const HeroHeadingWrapper = styled('div', {
       maxWidth: '400px'
     },
 
-    h3: {
+    p: {
       fontSize: '$sm',
       maxWidth: '380px'
     }
@@ -97,7 +88,7 @@ export const HeroHeadingWrapper = styled('div', {
       maxWidth: '300px'
     },
 
-    h3: {
+    p: {
       maxWidth: '290px'
     }
   }

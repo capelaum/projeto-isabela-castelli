@@ -12,7 +12,9 @@ export function DropdownMenu({ children, trigger, type }: DropdownMenuProps) {
   return (
     <Root modal={false}>
       <Trigger asChild>
-        <TriggerButton type={type}>{trigger}</TriggerButton>
+        <TriggerButton title="Abrir menu" type={type}>
+          {trigger}
+        </TriggerButton>
       </Trigger>
 
       <Portal>

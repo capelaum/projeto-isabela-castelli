@@ -21,10 +21,10 @@ export function HeroHeading() {
       </Heading>
 
       <Text color="black" size="lg" asChild>
-        <h3>
+        <p>
           Um acompanhamento psicológico bem feito vai ajudá-lo a compreender os
           seus sentimentos, seu modo de pensar e de agir.
-        </h3>
+        </p>
       </Text>
 
       <ButtonLink

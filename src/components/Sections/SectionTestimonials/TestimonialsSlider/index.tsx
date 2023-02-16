@@ -89,11 +89,14 @@ export function TestimonialsSlider() {
       </TestimonialsSliderContainer>
 
       <TestimonialsMobileArrows>
-        <TestimonialsMobileArrow>
+        <TestimonialsMobileArrow title="Ir para depoimento à esquerda">
           <CaretLeft size={28} onClick={(e) => instanceRef.current?.prev()} />
         </TestimonialsMobileArrow>
 
-        <TestimonialsMobileArrow onClick={(e) => instanceRef.current?.next()}>
+        <TestimonialsMobileArrow
+          title="Ir para depoimento à direira"
+          onClick={(e) => instanceRef.current?.next()}
+        >
           <CaretRight size={28} />
         </TestimonialsMobileArrow>
       </TestimonialsMobileArrows>
