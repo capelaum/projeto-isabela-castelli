@@ -27,7 +27,7 @@ export const HeroContainer = styled('div', {
   alignItems: 'flex-start',
 
   margin: '0 1.5rem',
-  marginTop: '15rem',
+  marginTop: '12rem',
   marginBottom: '3rem',
   width: '100%',
   maxWidth: '1400px',
@@ -36,13 +36,12 @@ export const HeroContainer = styled('div', {
 
   '@bp1': {
     flexDirection: 'column',
-    marginTop: '12rem',
     width: 'auto'
   },
 
   '@bp2': {
     margin: '0 1rem',
-    marginTop: '12rem'
+    marginTop: '10rem'
   }
 })
 
@@ -63,6 +62,8 @@ export const HeroImageWrapper = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   width: '50%',
+  // border: '1px solid red',
+  marginTop: '5rem',
 
   position: 'absolute',
   top: 0,
@@ -88,7 +89,7 @@ export const HeroImageWrapper = styled('div', {
     right: 0,
     pointerEvents: 'none',
     background:
-      'linear-gradient(to right, $white, rgba(255, 255, 255, 0.5),  rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1), transparent, transparent, transparent, transparent, transparent)'
+      'linear-gradient(to right, $white 0%, rgba(255, 255, 255, 0.5) 15%,  rgba(255, 255, 255, 0.25) 20%, transparent 25%, transparent 100%)'
   },
 
   '@bp1': {
@@ -121,7 +122,7 @@ export const HeroImageMobileWrapper = styled('div', {
     right: 0,
     pointerEvents: 'none',
     background:
-      'linear-gradient(to bottom, $white, rgba(255, 255, 255, 0.3),  rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), transparent, transparent, transparent, transparent, transparent)'
+      'linear-gradient(to bottom, $white 0%, rgba(255, 255, 255, 0.5) 5%,  rgba(255, 255, 255, 0.25) 10%, transparent 15%, transparent 100%)'
   },
 
   '@bp1': {

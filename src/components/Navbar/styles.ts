@@ -15,9 +15,13 @@ export const NavbarWrapper = styled('header', {
 
   variants: {
     isScrolled: {
-      true: {},
+      true: {
+        background: '$white'
+      },
 
-      false: {}
+      false: {
+        backgroundColor: '$white'
+      }
     }
   },
 
