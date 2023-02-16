@@ -21,8 +21,11 @@ export function SEO({ title, description, url }: SeoProps) {
       <meta property="og:description" content={description} />
       <meta property="og:site_name" content={title} />
       <meta property="og:locale" content="pt_BR" />
+
       <meta property="og:image" itemProp="image" content="/Capa.png" />
       <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="300" />
+      <meta property="og:image:height" content="300" />
 
       <meta name="twitter:url" content={url} />
       <meta name="twitter:card" content="summary_large_image" />
