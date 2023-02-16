@@ -2,9 +2,6 @@
 
 <img src=".github/Capa.png" >
 
-<br />
-<br />
-
 # Tech
 
 - [Next.js][next]
