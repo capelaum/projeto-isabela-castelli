@@ -36,7 +36,7 @@ export const globalStyles = globalCss({
 
     '&::-webkit-scrollbar-thumb': {
       background: '$secondary',
-      borderRadius: '50px',
+      // borderRadius: '50px',
       width: '10px',
 
       '&:hover': {
