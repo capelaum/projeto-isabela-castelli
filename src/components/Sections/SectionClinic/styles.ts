@@ -25,7 +25,8 @@ export const ClinicContainer = styled('section', {
   '@bp2': {
     gap: '3.5rem',
     flexDirection: 'column-reverse',
-    padding: '2.5rem 1.25rem'
+    padding: '0rem 1.25rem',
+    paddingBottom: '2.5rem'
   }
 })
 

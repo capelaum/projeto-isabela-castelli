@@ -8,6 +8,6 @@ export const StyledSection = styled('div', {
   padding: '5rem 1.5rem',
 
   '@bp2': {
-    padding: '2.5rem 1.25rem'
+    padding: '5rem 1.25rem'
   }
 })

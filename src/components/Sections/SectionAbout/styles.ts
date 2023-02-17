@@ -13,9 +13,7 @@ export const AboutWrapper = styled('section', {
 
   '@bp2': {
     gap: '3.5rem',
-    flexDirection: 'column',
-    paddingTop: '5rem',
-    paddingBottom: '2.5rem'
+    flexDirection: 'column'
   }
 })
 
