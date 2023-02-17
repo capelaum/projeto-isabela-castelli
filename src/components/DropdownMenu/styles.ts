@@ -49,7 +49,12 @@ export const DropdownMenuContent = styled(DropdownMenu.Content, {
     type: {
       navbar: {
         marginRight: '1.25rem',
-        fontSize: '$sm'
+        fontSize: '$sm',
+        display: 'none',
+
+        '@bp2': {
+          display: 'block'
+        }
       }
     }
   },
@@ -94,7 +99,7 @@ export const DropdownMenuItem = styled(DropdownMenu.Item, {
   display: 'flex',
   alignItems: 'center',
 
-  padding: '0.8125rem 0.5rem',
+  padding: '1rem 0.5rem',
 
   '&[data-disabled]': {
     color: '$gray1',

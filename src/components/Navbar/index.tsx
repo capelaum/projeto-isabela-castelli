@@ -21,6 +21,7 @@ export function Navbar() {
       <NavbarContainer>
         <Link href="#inicio" title="Início" scroll={false}>
           <Image
+            priority
             src={Logo}
             alt="Logotipo da psicóloga Isabela Castelli, tendo escrito o nome Isabela Castelli e a frase Psicologa Clínica e Hospitalar em rosa claro."
           />

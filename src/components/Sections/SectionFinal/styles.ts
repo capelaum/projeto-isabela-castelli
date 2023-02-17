@@ -13,7 +13,7 @@ export const FinalWrapper = styled('section', {
   },
 
   '@bp2': {
-    gap: '3.5rem',
+    gap: '5rem',
     flexDirection: 'column'
   }
 })

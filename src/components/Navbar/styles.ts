@@ -6,12 +6,16 @@ export const NavbarWrapper = styled('header', {
   justifyContent: 'center',
   alignItems: 'center',
 
+  background: '$white',
+
   width: '100%',
   padding: '1rem 1.5rem',
 
-  // border: '1px solid red',
-
-  background: '$white',
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  right: 0,
+  zIndex: 4,
 
   variants: {
     isScrolled: {
@@ -24,12 +28,6 @@ export const NavbarWrapper = styled('header', {
       }
     }
   },
-
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  right: 0,
-  zIndex: 4,
 
   '@bp2': {
     padding: '1rem'
@@ -47,11 +45,6 @@ export const NavbarContainer = styled('nav', {
   img: {
     width: '180px',
     height: 'auto'
-  },
-
-  '@bp2': {
-    // flexDirection: 'column',
-    // alignItems: 'center'
   }
 })
 

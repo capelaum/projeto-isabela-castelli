@@ -17,8 +17,9 @@ export const globalStyles = globalCss({
     color: '$white',
     fontFamily: '$inter',
     fontWeight: 400,
+    // position: 'relative',
+
     '-webkit-font-smoothing': 'antialised',
-    position: 'relative',
 
     scrollbarWidth: 'thin',
     scrollbarColor: '$primary $primary',
