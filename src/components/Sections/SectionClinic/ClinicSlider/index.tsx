@@ -1,13 +1,11 @@
+import { SliderArrow } from 'components/SliderArrow'
+import { SliderMobileArrows } from 'components/SliderMobileArrows'
 import { gallery } from 'data/gallery'
 import { useKeenSlider } from 'keen-slider/react'
 import Image from 'next/image'
-import { CaretLeft, CaretRight } from 'phosphor-react'
 import { useState } from 'react'
 import {
   ClinicImageWrapper,
-  ClinicMobileArrow,
-  ClinicMobileArrows,
-  ClinicSliderArrow,
   ClinicSliderContainer,
   ClinicSliderMobileWrapper,
   ClinicSliderWrapper
@@ -42,12 +40,10 @@ export function ClinicSlider() {
         viewport={{ once: true }}
       >
         <ClinicSliderContainer ref={sliderRef} className="keen-slider">
-          <ClinicSliderArrow
+          <SliderArrow
             direction="left"
             onClick={() => instanceRef.current?.prev()}
-          >
-            <CaretLeft size={40} weight="bold" />
-          </ClinicSliderArrow>
+          />
 
           {gallery.map((galleryImage) => (
             <ClinicImageWrapper
@@ -58,27 +54,18 @@ export function ClinicSlider() {
             </ClinicImageWrapper>
           ))}
 
-          <ClinicSliderArrow
+          <SliderArrow
             direction="right"
             onClick={() => instanceRef.current?.next()}
-          >
-            <CaretRight size={40} weight="bold" />
-          </ClinicSliderArrow>
+          />
         </ClinicSliderContainer>
       </ClinicSliderWrapper>
 
-      <ClinicMobileArrows>
-        <ClinicMobileArrow title="Ir para depoimento à esquerda">
-          <CaretLeft size={28} onClick={() => instanceRef.current?.prev()} />
-        </ClinicMobileArrow>
-
-        <ClinicMobileArrow
-          title="Ir para depoimento à direita"
-          onClick={() => instanceRef.current?.next()}
-        >
-          <CaretRight size={28} />
-        </ClinicMobileArrow>
-      </ClinicMobileArrows>
+      <SliderMobileArrows
+        titleLeft="Ir para imagem à esquerda."
+        titleRight="Ir para imagem à direita."
+        instanceRef={instanceRef}
+      />
     </ClinicSliderMobileWrapper>
   )
 }

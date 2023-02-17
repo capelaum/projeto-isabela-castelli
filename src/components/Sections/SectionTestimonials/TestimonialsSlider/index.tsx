@@ -1,16 +1,14 @@
 import { Heading } from 'components/Heading'
+import { SliderArrow } from 'components/SliderArrow'
+import { SliderMobileArrows } from 'components/SliderMobileArrows'
 import { Text } from 'components/Text'
 import { testimonials } from 'data/testimonials'
 import { useKeenSlider } from 'keen-slider/react'
-import { CaretLeft, CaretRight } from 'phosphor-react'
 import { useState } from 'react'
 import {
   TestimonialCard,
   TestimonialCardHeader,
   TestimonialQuotes,
-  TestimonialsMobileArrow,
-  TestimonialsMobileArrows,
-  TestimonialsSliderArrow,
   TestimonialsSliderContainer
 } from './styles'
 
@@ -51,12 +49,10 @@ export function TestimonialsSlider() {
   return (
     <>
       <TestimonialsSliderContainer ref={sliderRef} className="keen-slider">
-        <TestimonialsSliderArrow
+        <SliderArrow
           direction="left"
-          onClick={(e) => instanceRef.current?.prev()}
-        >
-          <CaretLeft size={28} />
-        </TestimonialsSliderArrow>
+          onClick={() => instanceRef.current?.prev()}
+        />
 
         {testimonials.map((testimonial) => (
           <TestimonialCard key={testimonial.id} className="keen-slider__slide">
@@ -78,28 +74,17 @@ export function TestimonialsSlider() {
           </TestimonialCard>
         ))}
 
-        {loaded && instanceRef.current && (
-          <TestimonialsSliderArrow
-            direction="right"
-            onClick={(e) => instanceRef.current?.next()}
-          >
-            <CaretRight size={28} />
-          </TestimonialsSliderArrow>
-        )}
+        <SliderArrow
+          direction="right"
+          onClick={() => instanceRef.current?.next()}
+        />
       </TestimonialsSliderContainer>
 
-      <TestimonialsMobileArrows>
-        <TestimonialsMobileArrow title="Ir para depoimento à esquerda">
-          <CaretLeft size={28} onClick={(e) => instanceRef.current?.prev()} />
-        </TestimonialsMobileArrow>
-
-        <TestimonialsMobileArrow
-          title="Ir para depoimento à direita"
-          onClick={(e) => instanceRef.current?.next()}
-        >
-          <CaretRight size={28} />
-        </TestimonialsMobileArrow>
-      </TestimonialsMobileArrows>
+      <SliderMobileArrows
+        titleLeft="Ir para depoimento à esquerda."
+        titleRight="Ir para depoimento à direita."
+        instanceRef={instanceRef}
+      />
     </>
   )
 }
