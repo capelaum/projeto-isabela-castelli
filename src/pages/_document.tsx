@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
           <SEO
             title="Isabela Castelli - Psicologia Clínica e Hospitalar"
             description="A sua saúde mental é prioridade! Um acompanhamento psicológico bem feito vai ajudá-lo a compreender os seus sentimentos, seu modo de pensar e de agir."
-            url="https://isabelacastelli.com.br"
+            url={process.env.NEXT_PUBLIC_URL}
           />
         </Head>
         <body>

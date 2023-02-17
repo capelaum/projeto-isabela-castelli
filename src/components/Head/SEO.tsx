@@ -22,11 +22,7 @@ export function SEO({ title, description, url }: SeoProps) {
       <meta property="og:site_name" content={title} />
       <meta property="og:locale" content="pt_BR" />
 
-      <meta
-        property="og:image"
-        itemProp="image"
-        content="https://projeto-isabela-castelli.vercel.app/Capa.png"
-      />
+      <meta property="og:image" itemProp="image" content={`${url}/Capa.png`} />
       <meta property="og:image:type" content="image/png" />
 
       <meta name="twitter:url" content={url} />
@@ -35,10 +31,7 @@ export function SEO({ title, description, url }: SeoProps) {
       <meta name="twitter:site" content="@capellett" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta
-        name="twitter:image"
-        content="https://projeto-isabela-castelli.vercel.app/Capa.png"
-      />
+      <meta name="twitter:image" content={`${url}/Capa.png`} />
     </>
   )
 }
