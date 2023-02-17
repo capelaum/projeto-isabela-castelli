@@ -20,7 +20,7 @@ export const TestimonialsHeader = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  gap: '1.25rem',
+  gap: '1.5rem',
   padding: '0 1.5rem',
   paddingBottom: '5rem',
 
@@ -29,10 +29,6 @@ export const TestimonialsHeader = styled(motion.div, {
   },
 
   '@bp2': {
-    h1: {
-      fontSize: '1.5rem'
-    },
-
     h2: {
       fontSize: '$sm'
     }
@@ -40,15 +36,7 @@ export const TestimonialsHeader = styled(motion.div, {
 
   '@bp3': {
     padding: '0 1rem',
-    paddingBottom: '3rem',
-
-    h1: {
-      fontSize: '1.25rem'
-    },
-
-    h2: {
-      fontSize: '$xs'
-    }
+    paddingBottom: '5rem'
   }
 })
 
