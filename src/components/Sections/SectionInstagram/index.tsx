@@ -8,7 +8,12 @@ import { InstaProfileImageWrapper, InstaTitle, InstaWrapper } from './styles'
 export function SectionInstagram() {
   return (
     <SectionContainer>
-      <InstaWrapper>
+      <InstaWrapper
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        viewport={{ once: true }}
+      >
         <InstaTitle
           href="https://www.instagram.com/psi.isabelacastelli"
           title="psi.isabelacastelli"

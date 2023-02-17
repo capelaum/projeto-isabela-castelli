@@ -9,7 +9,11 @@ export function HeroHeading() {
   )
 
   return (
-    <HeroHeadingWrapper>
+    <HeroHeadingWrapper
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+    >
       <Text weight="semibold" color="black" size="sm" asChild>
         <h2>Psicopatologia e Psicodiagnóstico</h2>
       </Text>

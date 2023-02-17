@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import { styled } from 'styles/stitches.config'
 
-export const StyledPinkGradient = styled('div', {
+export const StyledPinkGradient = styled(motion.div, {
   position: 'absolute',
   top: -400,
   left: 0,

@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import { styled } from 'styles/stitches.config'
 
-export const ClinicSliderWrapper = styled('div', {
+export const ClinicSliderWrapper = styled(motion.div, {
   display: 'flex',
   width: '40%',
   borderRadius: '$lg',

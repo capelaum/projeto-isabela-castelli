@@ -14,7 +14,12 @@ export function SectionClinic() {
   return (
     <ClinicWrapper id="consultorio">
       <ClinicContainer>
-        <ClinicContent>
+        <ClinicContent
+          initial={{ opacity: 0, x: '100%' }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2, duration: 0.75 }}
+          viewport={{ once: true }}
+        >
           <Heading size="lg" asChild>
             <h1>
               O que esperar <br /> de seu atendimento

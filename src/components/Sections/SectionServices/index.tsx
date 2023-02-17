@@ -14,7 +14,13 @@ import {
 export function SectionServices() {
   return (
     <SectionContainer>
-      <ServicesWrapper id="servicos">
+      <ServicesWrapper
+        id="servicos"
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        viewport={{ once: true }}
+      >
         <Heading asChild size="md">
           <h1>
             A Terapia não é um local de julgamento, mas sim de aconchego,

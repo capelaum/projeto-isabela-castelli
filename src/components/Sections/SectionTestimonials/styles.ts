@@ -1,7 +1,8 @@
+import { motion } from 'framer-motion'
 import { Quotes } from 'phosphor-react'
 import { styled } from 'styles/stitches.config'
 
-export const TestimonialsWrapper = styled('section', {
+export const TestimonialsWrapper = styled(motion.section, {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
@@ -15,7 +16,7 @@ export const TestimonialsWrapper = styled('section', {
   }
 })
 
-export const TestimonialsHeader = styled('div', {
+export const TestimonialsHeader = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',

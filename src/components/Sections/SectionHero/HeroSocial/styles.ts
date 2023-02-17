@@ -1,7 +1,8 @@
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { keyframes, styled } from 'styles/stitches.config'
 
-export const HeroSocialWrapper = styled('div', {
+export const HeroSocialWrapper = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',

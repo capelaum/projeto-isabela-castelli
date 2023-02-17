@@ -6,7 +6,12 @@ import { TestimonialsSlider } from './TestimonialsSlider'
 export function SectionTestimonials() {
   return (
     <TestimonialsWrapper id="depoimentos">
-      <TestimonialsHeader>
+      <TestimonialsHeader
+        initial={{ opacity: 0, scale: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        viewport={{ once: true }}
+      >
         <StyledQuotes size={32} weight="fill" />
 
         <Heading size="md" asChild>

@@ -15,7 +15,12 @@ export function SectionFinal() {
   return (
     <SectionContainer>
       <FinalWrapper>
-        <FinalContent>
+        <FinalContent
+          initial={{ opacity: 0, x: '100%' }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2, duration: 0.75 }}
+          viewport={{ once: true }}
+        >
           <Heading size="lg" asChild>
             <h1>
               A vida pode ser difícil e, às vezes, a ajuda de um Psicoterapeuta
@@ -41,7 +46,12 @@ export function SectionFinal() {
           </ButtonLink>
         </FinalContent>
 
-        <FinalImageWrapper>
+        <FinalImageWrapper
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          viewport={{ once: true }}
+        >
           <Image
             src={Profile}
             alt="Foto de perfil da Psicóloga Isabela Castelli."

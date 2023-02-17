@@ -10,7 +10,11 @@ import {
 
 export function HeroSocial() {
   return (
-    <HeroSocialWrapper>
+    <HeroSocialWrapper
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2, duration: 1 }}
+    >
       <Divider />
 
       <Text size="sm" color="gray3" weight="medium">

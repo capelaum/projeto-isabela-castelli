@@ -1,7 +1,8 @@
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { styled } from 'styles/stitches.config'
 
-export const InstaWrapper = styled('section', {
+export const InstaWrapper = styled(motion.section, {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',

@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import { styled } from 'styles/stitches.config'
 
-export const ServicesWrapper = styled('section', {
+export const ServicesWrapper = styled(motion.section, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',

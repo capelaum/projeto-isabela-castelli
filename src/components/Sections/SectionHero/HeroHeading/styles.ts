@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import { styled } from 'styles/stitches.config'
 
-export const HeroHeadingWrapper = styled('div', {
+export const HeroHeadingWrapper = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',

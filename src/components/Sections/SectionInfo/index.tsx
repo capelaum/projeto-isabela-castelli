@@ -5,7 +5,12 @@ import { InfoContent, InfotItem, InfotItems, InfoWrapper } from './styles'
 export function SectionInfo() {
   return (
     <InfoWrapper>
-      <InfoContent>
+      <InfoContent
+        initial={{ opacity: 0, x: '-100%' }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.2, duration: 1 }}
+        viewport={{ once: true }}
+      >
         <Heading size="sm">
           Atendimentos online <br /> e presencial:
         </Heading>

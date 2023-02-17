@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { styled } from 'styles/stitches.config'
 
 export const ClinicWrapper = styled('section', {
@@ -28,7 +29,7 @@ export const ClinicContainer = styled('section', {
   }
 })
 
-export const ClinicContent = styled('div', {
+export const ClinicContent = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
