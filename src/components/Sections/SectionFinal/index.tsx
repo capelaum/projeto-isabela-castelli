@@ -23,7 +23,7 @@ export function SectionFinal() {
         >
           <Heading size="lg" asChild>
             <h1>
-              A vida pode ser difícil e, às vezes, a ajuda de um Psicoterapeuta
+              A vida pode ser difícil, e a ajuda de um Psicoterapeuta
               profissional pode ser muito efetiva.
             </h1>
           </Heading>

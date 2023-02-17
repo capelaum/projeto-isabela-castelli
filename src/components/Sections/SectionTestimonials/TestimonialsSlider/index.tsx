@@ -61,7 +61,7 @@ export function TestimonialsSlider() {
         {testimonials.map((testimonial) => (
           <TestimonialCard key={testimonial.id} className="keen-slider__slide">
             <TestimonialCardHeader>
-              <Heading color="white" size="xs" asChild>
+              <Heading color="white" size="sm" asChild>
                 <h3>Paciente</h3>
               </Heading>
 

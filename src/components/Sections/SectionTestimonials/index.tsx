@@ -1,6 +1,7 @@
 import { Heading } from 'components/Heading'
 import { Text } from 'components/Text'
-import { StyledQuotes, TestimonialsHeader, TestimonialsWrapper } from './styles'
+import { ChatCenteredDots } from 'phosphor-react'
+import { TestimonialsHeader, TestimonialsWrapper } from './styles'
 import { TestimonialsSlider } from './TestimonialsSlider'
 
 export function SectionTestimonials() {
@@ -12,7 +13,9 @@ export function SectionTestimonials() {
         transition={{ delay: 0.2, duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <StyledQuotes size={32} weight="fill" />
+        {/* <StyledQuotes size={32} weight="fill" /> */}
+
+        <ChatCenteredDots size={32} weight="fill" />
 
         <Heading size="md" asChild>
           <h1>O que os pacientes estão falando</h1>
@@ -20,8 +23,8 @@ export function SectionTestimonials() {
 
         <Text asChild size="md">
           <h2>
-            Em respeito ao sigilo terapêutico dos pacientes, não será divulgado
-            seus nomes.
+            Em respeito ao sigilo terapêutico dos pacientes, não serão
+            divulgados os seus nomes.
           </h2>
         </Text>
       </TestimonialsHeader>

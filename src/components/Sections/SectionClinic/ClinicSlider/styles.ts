@@ -1,9 +1,19 @@
 import { motion } from 'framer-motion'
 import { styled } from 'styles/stitches.config'
 
+export const ClinicSliderMobileWrapper = styled(motion.div, {
+  display: 'flex',
+  flexDirection: 'column',
+  width: '40%',
+
+  '@bp2': {
+    width: '100%'
+  }
+})
+
 export const ClinicSliderWrapper = styled(motion.div, {
   display: 'flex',
-  width: '40%',
+  width: '100%',
   borderRadius: '$lg',
   overflow: 'hidden',
 
@@ -32,7 +42,7 @@ export const ClinicSliderContainer = styled('div', {
     }
   },
 
-  '@bp3': {
+  '@bp2': {
     button: {
       display: 'none'
     }
@@ -98,5 +108,45 @@ export const ClinicSliderArrow = styled('button', {
         // background: 'linear-gradient(to left, rgba(0 , 0, 0, 0.7), transparent)'
       }
     }
+  }
+})
+
+export const ClinicMobileArrows = styled('div', {
+  display: 'none',
+  paddingTop: '2rem',
+
+  '@bp2': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '1rem'
+  }
+})
+
+export const ClinicMobileArrow = styled('button', {
+  width: '3rem',
+  height: '3rem',
+  borderRadius: '$circle',
+
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+
+  color: '$white',
+  backgroundColor: '$gray4',
+
+  transition: '$fast',
+
+  '&:hover': {
+    color: '$secondary'
+  },
+
+  '&:disabled': {
+    display: 'none',
+    cursor: 'not-allowed'
+  },
+
+  '@bp2': {
+    display: 'flex'
   }
 })

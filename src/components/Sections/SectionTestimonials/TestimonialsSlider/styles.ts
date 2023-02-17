@@ -29,9 +29,9 @@ export const TestimonialsSliderContainer = styled('div', {
 export const TestimonialCard = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  gap: '4rem',
+  gap: '3rem',
   borderRadius: '$default',
-  padding: '5rem 3.5rem',
+  padding: '3rem',
 
   background: '$black',
 
@@ -41,9 +41,6 @@ export const TestimonialCard = styled('div', {
   },
 
   '@bp3': {
-    gap: '2rem',
-    padding: '4rem 2.5rem',
-
     p: {
       fontSize: '$sm'
     }
@@ -53,7 +50,7 @@ export const TestimonialCard = styled('div', {
 export const TestimonialCardHeader = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  gap: '1rem'
+  gap: '0.5rem'
 })
 
 export const TestimonialQuotes = styled(Quotes, {
