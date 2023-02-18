@@ -27,10 +27,12 @@ export const FooterContent = styled('div', {
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'flex-start',
+  gap: '1rem',
 
   '@bp3': {
     flexDirection: 'column-reverse',
-    alignItems: 'center'
+    alignItems: 'center',
+    gap: 0
   }
 })
 
@@ -38,10 +40,32 @@ export const FooterLeft = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
-  gap: '2rem',
+  gap: '2.5rem',
+  marginTop: '1rem',
 
   '@bp3': {
-    alignItems: 'center'
+    alignItems: 'center',
+    margin: '5rem 0'
+  }
+})
+
+export const FooterRight = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+  gap: '1rem',
+  maxWidth: '380px',
+
+  span: {
+    lineHeight: '1.6'
+  },
+
+  '@bp3': {
+    alignItems: 'center',
+
+    span: {
+      textAlign: 'center'
+    }
   }
 })
 
@@ -50,11 +74,9 @@ export const FooterNav = styled('nav', {
   flexDirection: 'column',
   alignItems: 'flex-start',
   gap: '1.25rem',
-  marginBottom: '2rem',
 
   '@bp3': {
-    alignItems: 'center',
-    margin: '3rem 0'
+    alignItems: 'center'
   }
 })
 
@@ -145,18 +167,23 @@ export const FooterImageWrapper = styled('div', {
   },
 
   '@bp3': {
-    width: '80%'
+    width: '90%'
   }
 })
 
 export const FooterEnd = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
+  alignItems: 'flex-start',
   gap: '0.75rem',
   marginTop: '5rem',
 
   span: {
     textAlign: 'center'
+  },
+
+  '@bp3': {
+    alignItems: 'center',
+    marginTop: '0rem'
   }
 })
