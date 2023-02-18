@@ -9,7 +9,7 @@ export const TestimonialsWrapper = styled(motion.section, {
   alignItems: 'center',
   width: '100%',
 
-  padding: '5rem 1.5rem',
+  padding: '5rem 0',
 
   '@bp2': {
     padding: '2.5rem 1.25rem'
