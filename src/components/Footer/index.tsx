@@ -14,6 +14,7 @@ import {
   FooterLeft,
   FooterNav,
   FooterNavLink,
+  FooterRight,
   FooterSocialLink,
   FooterSocialLinks,
   FooterWrapper
@@ -68,16 +69,33 @@ export function Footer() {
             </FooterSocialLinks>
           </FooterLeft>
 
-          <FooterImageWrapper>
-            <Image
-              src={FooterLogo}
-              alt="Logo em rosa escrito Isabela Castelli em letra cursiva e um cerebro rosa claro ao lado."
-            />
-          </FooterImageWrapper>
+          <FooterRight>
+            <FooterImageWrapper>
+              <Image
+                src={FooterLogo}
+                alt="Logo em rosa escrito Isabela Castelli em letra cursiva e um cerebro rosa claro ao lado."
+              />
+            </FooterImageWrapper>
+
+            <Text size="xs" color="gray1">
+              Psicóloga Isabela Castelli - Terapeuta Psicopatologia e
+              Psicodiagnóstico.
+            </Text>
+
+            <Text size="xs" color="gray1">
+              <strong>Endereço: </strong>
+              Setor Médico Hospitalar Norte Edifício de Clínicas Sala 507 - Asa
+              Norte, Brasília - DF, 70710-904
+            </Text>
+
+            <Text size="xs" color="gray1">
+              <strong>Telefone: </strong>
+              +55 (61) 98166-8336
+            </Text>
+          </FooterRight>
         </FooterContent>
 
         <FooterEnd>
-          <Text size="xs">Psicóloga Isabela Castelli.</Text>
           <Text size="xs">Todos os direitos reservados.</Text>
 
           <Text size="xs">
