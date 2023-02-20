@@ -78,8 +78,8 @@ export function Footer() {
             </FooterImageWrapper>
 
             <Text size="xs" color="gray1">
-              Psicóloga Isabela Castelli - Terapeuta Psicopatologia e
-              Psicodiagnóstico.
+              Psicóloga Isabela Castelli - Terapeuta Cognitivo Comportamental -
+              Psicopatologia - Psicodiagnóstico
             </Text>
 
             <Text size="xs" color="gray1">
