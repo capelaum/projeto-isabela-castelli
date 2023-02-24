@@ -21,6 +21,9 @@ import {
 } from './styles'
 
 export function Footer() {
+  // get current year
+  const currentYear = new Date().getFullYear()
+
   return (
     <FooterWrapper>
       <FooterContainer>
@@ -79,7 +82,7 @@ export function Footer() {
 
             <Text size="xs" color="gray1">
               Psicóloga Isabela Castelli - Terapeuta Cognitivo Comportamental -
-              Psicopatologia - Psicodiagnóstico
+              Psicopatologia - Psicodiagnóstico.
             </Text>
 
             <Text size="xs" color="gray1">
@@ -97,6 +100,7 @@ export function Footer() {
 
         <FooterEnd>
           <Text size="xs">Todos os direitos reservados.</Text>
+          <Text size="xs">©{currentYear} - Psicóloga Isabela Castelli.</Text>
 
           <Text size="xs">
             Desenvolvido com 🤍 por{' '}

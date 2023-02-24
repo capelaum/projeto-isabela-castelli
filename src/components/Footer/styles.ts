@@ -175,7 +175,7 @@ export const FooterEnd = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
-  gap: '0.75rem',
+  gap: '0.5rem',
   marginTop: '5rem',
 
   span: {
