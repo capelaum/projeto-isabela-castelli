@@ -26,6 +26,7 @@
     "framer-motion": "^9.0.4",
     "keen-slider": "^6.8.5",
     "next": "^13.1.6",
+    "nextjs-google-analytics": "^2.3.3",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
