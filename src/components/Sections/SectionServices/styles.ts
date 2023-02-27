@@ -90,6 +90,10 @@ export const ServiceItem = styled('li', {
 
   transition: '$fast',
 
+  p: {
+    lineHeight: 1.6
+  },
+
   '&:first-child': {
     borderRadius: '0 $lg 0 0 '
   },

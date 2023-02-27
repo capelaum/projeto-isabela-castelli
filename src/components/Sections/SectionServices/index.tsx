@@ -42,8 +42,8 @@ export function SectionServices() {
                 <h2>Terapia Cognitivo-Comportamental</h2>
               </Heading>
 
-              <Text color="white" size="sm">
-                Terapeuta cognitivas comportamentais.
+              <Text color="white" size="sm" asChild>
+                <p>Terapeuta cognitivas comportamentais.</p>
               </Text>
             </ServiceItem>
 
@@ -52,9 +52,11 @@ export function SectionServices() {
                 <h2>Avaliação Psicológica</h2>
               </Heading>
 
-              <Text color="white" size="sm">
-                Avaliações para procedimentos invasivos (cirurgias) e testagem
-                para definição diagnóstico.
+              <Text color="white" size="sm" asChild>
+                <p>
+                  Avaliações para procedimentos invasivos (cirurgias) e testagem
+                  para definição diagnóstico.
+                </p>
               </Text>
             </ServiceItem>
 
@@ -63,8 +65,8 @@ export function SectionServices() {
                 <h2>Traumas Psicológicos</h2>
               </Heading>
 
-              <Text color="white" size="sm">
-                Foco nas experiências traumáticas.
+              <Text color="white" size="sm" asChild>
+                <p>Foco nas experiências traumáticas.</p>
               </Text>
             </ServiceItem>
 
@@ -73,9 +75,12 @@ export function SectionServices() {
                 <h2>Teste de Rorschach</h2>
               </Heading>
 
-              <Text color="white" size="sm">
-                Técnica de avaliação psicológica, comumente denominada de teste
-                projetivo, ou mais recentemente de método de autoexpressão.
+              <Text color="white" size="sm" asChild>
+                <p>
+                  Técnica de avaliação psicológica, comumente denominada de
+                  teste projetivo, ou mais recentemente de método de
+                  autoexpressão.
+                </p>
               </Text>
             </ServiceItem>
           </ServicesList>
