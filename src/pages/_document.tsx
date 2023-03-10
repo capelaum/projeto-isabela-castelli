@@ -1,6 +1,7 @@
 import { Favicon } from 'components/Head/Favicon'
 import { SEO } from 'components/Head/SEO'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 import { getCssText } from 'styles/stitches.config'
 
 export default class MyDocument extends Document {
@@ -34,15 +35,29 @@ export default class MyDocument extends Document {
             url={process.env.NEXT_PUBLIC_URL}
           />
 
-          {/* <!-- Google Tag Manager --> */}
-          <script>
-            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-WL3W5L5');`}
-          </script>
-          {/* <!-- End Google Tag Manager --> */}
+          <Script
+            id="GTM-WL3W5L5"
+            src="https://www.googletagmanager.com/gtm.js?id=GTM-WL3W5L5"
+            async
+            strategy="afterInteractive"
+            onLoad={() => {
+              // ;(function (w, d, s, l, i) {
+              //   w[l] = w[l] || []
+              //   w[l].push({
+              //     'gtm.start': new Date().getTime(),
+              //     event: 'gtm.js'
+              //   })
+              //   var f = d.getElementsByTagName(s)[0],
+              //     j = d.createElement(s),
+              //     dl = l != 'dataLayer' ? '&l=' + l : ''
+              //   j.async = true
+              //   j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+              //   f.parentNode.insertBefore(j, f)
+              // })(window, document, 'script', 'dataLayer', 'GTM-WL3W5L5')
+
+              console.log('Google Tag Manager loaded!')
+            }}
+          />
         </Head>
         <body>
           {/* <!-- Google Tag Manager (noscript) --> */}
