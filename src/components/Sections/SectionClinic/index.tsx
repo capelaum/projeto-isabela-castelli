@@ -28,11 +28,13 @@ export function SectionClinic() {
 
           <Text asChild>
             <p>
-              Atenção personalizada, através do uso de vários métodos de
-              psicoterapia e tratamentos associados, as sessões de terapia são
-              elaboradas com intuito de examinar em profundidade os problemas
-              pessoais e fornecer aos pacientes ferramentas eficazes para uma
-              boa perspectiva de vida.
+              Atenção personalizada através do uso de métodos e técnicas da
+              abordagem cognitiva comportamental. Cada sessão de terapia é
+              elaborada exclusivamente para a demanda de cada paciente com o
+              objetivo de compreender, em profundidade, os problemas
+              apresentados e fornecer ao paciente ferramentas baseadas em
+              evidências científicas para melhora da perspectiva e qualidade de
+              vida.
             </p>
           </Text>
 
