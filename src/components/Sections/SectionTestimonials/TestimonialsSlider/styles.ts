@@ -36,7 +36,7 @@ export const TestimonialCard = styled('div', {
   background: '$black',
 
   p: {
-    lineHeight: '1.6',
+    lineHeight: '$base',
     position: 'relative'
   },
 

@@ -57,7 +57,7 @@ export const FooterRight = styled('div', {
   maxWidth: '380px',
 
   span: {
-    lineHeight: '1.6'
+    lineHeight: '$base'
   },
 
   '@bp3': {

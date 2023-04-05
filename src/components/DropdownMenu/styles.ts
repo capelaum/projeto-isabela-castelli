@@ -91,7 +91,7 @@ export const DropdownMenuItem = styled(DropdownMenu.Item, {
   fontWeight: '$medium',
   fontSize: '$md',
 
-  lineHeight: 1,
+  lineHeight: '$shorter',
 
   backgroundColor: '$white',
 

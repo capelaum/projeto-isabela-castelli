@@ -16,14 +16,14 @@ export const HeroHeadingWrapper = styled(motion.div, {
     maxWidth: '650px',
     width: '100%',
     position: 'relative',
-    lineHeight: 1.4,
+    lineHeight: '$short',
     zIndex: 3
   },
 
   p: {
     maxWidth: '450px',
     width: '100%',
-    lineHeight: 1.4,
+    lineHeight: '$short',
     marginTop: '1.25rem'
   },
 

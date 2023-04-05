@@ -91,7 +91,7 @@ export const ServiceItem = styled('li', {
   transition: '$fast',
 
   p: {
-    lineHeight: 1.6
+    lineHeight: '$base'
   },
 
   '&:first-child': {

@@ -56,7 +56,7 @@ export const AboutDescription = styled('div', {
   maxWidth: '400px',
 
   p: {
-    lineHeight: 1.6
+    lineHeight: '$base'
   },
 
   '@bp2': {

@@ -34,12 +34,12 @@ export const ClinicContent = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
-  gap: '2.5rem',
+  gap: '3rem',
   width: '40%',
 
   p: {
-    lineHeight: 1.6,
-    maxWidth: '400px'
+    lineHeight: '$base',
+    maxWidth: '450px'
   },
 
   '@bp2': {
@@ -58,6 +58,22 @@ export const ClinicContent = styled(motion.div, {
   '@bp3': {
     h1: {
       fontSize: '1.75rem'
+    }
+  }
+})
+
+export const ClinicDescription = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '1.5rem',
+
+  p: {
+    lineHeight: '$base'
+  },
+
+  '@bp2': {
+    p: {
+      fontSize: '1rem'
     }
   }
 })

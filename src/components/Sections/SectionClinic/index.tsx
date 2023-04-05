@@ -4,7 +4,12 @@ import { PinkGradient } from 'components/PinkGradient'
 import { Text } from 'components/Text'
 import { WhatsappLogo } from 'phosphor-react'
 import { ClinicSlider } from './ClinicSlider'
-import { ClinicContainer, ClinicContent, ClinicWrapper } from './styles'
+import {
+  ClinicContainer,
+  ClinicContent,
+  ClinicDescription,
+  ClinicWrapper
+} from './styles'
 
 export function SectionClinic() {
   const message = encodeURIComponent(
@@ -26,17 +31,24 @@ export function SectionClinic() {
             </h1>
           </Heading>
 
-          <Text asChild>
-            <p>
-              Atenção personalizada através do uso de métodos e técnicas da
-              abordagem cognitiva comportamental. Cada sessão de terapia é
-              elaborada exclusivamente para a demanda de cada paciente com o
-              objetivo de compreender, em profundidade, os problemas
-              apresentados e fornecer ao paciente ferramentas baseadas em
-              evidências científicas para melhora da perspectiva e qualidade de
-              vida.
-            </p>
-          </Text>
+          <ClinicDescription>
+            <Text asChild>
+              <p>
+                Atenção personalizada através do uso de métodos e técnicas da
+                abordagem cognitiva comportamental.
+              </p>
+            </Text>
+
+            <Text asChild>
+              <p>
+                Cada sessão de terapia é elaborada exclusivamente para a demanda
+                de cada paciente com o objetivo de compreender, em profundidade,
+                os problemas apresentados e fornecer ao paciente ferramentas
+                baseadas em evidências científicas para melhora da perspectiva e
+                qualidade de vida.
+              </p>
+            </Text>
+          </ClinicDescription>
 
           <ButtonLink
             href={`https://wa.me/5561981668336?text=${message}`}

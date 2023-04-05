@@ -51,6 +51,13 @@ export const {
       black: 900
     },
 
+    lineHeights: {
+      shorter: '125%',
+      short: '140%',
+      base: '160%',
+      tall: '180%'
+    },
+
     space: {
       xs: '0.75rem',
       sm: '1rem',

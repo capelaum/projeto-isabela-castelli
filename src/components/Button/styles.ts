@@ -13,7 +13,7 @@ export const StyledButton = styled('button', {
 
   transition: '$fast',
   textAlign: 'center',
-  lineHeight: 1.6,
+  lineHeight: '$base',
 
   '&:disabled': {
     opacity: 0.7,

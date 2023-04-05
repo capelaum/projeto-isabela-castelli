@@ -26,7 +26,7 @@ export const FinalContent = styled(motion.div, {
   width: '40%',
 
   p: {
-    lineHeight: 1.6,
+    lineHeight: '$base',
     maxWidth: '400px'
   },
 
