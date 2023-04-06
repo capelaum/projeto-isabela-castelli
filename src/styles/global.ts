@@ -20,6 +20,11 @@ export const globalStyles = globalCss({
 
     '-webkit-font-smoothing': 'antialised',
 
+    '::selection': {
+      background: '$secondary',
+      color: '$white'
+    },
+
     scrollbarWidth: 'thin',
     scrollbarColor: '$primary $primary',
 
