@@ -13,7 +13,7 @@ export const ClinicContainer = styled('section', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  gap: '10rem',
+  gap: '8rem',
   width: '100%',
   maxWidth: '1448px',
   padding: '5rem 1.5rem',
@@ -35,16 +35,15 @@ export const ClinicContent = styled(motion.div, {
   flexDirection: 'column',
   alignItems: 'flex-start',
   gap: '3rem',
-  // width: '40%',
+  width: '45%',
 
   p: {
     lineHeight: '$base'
-    // maxWidth: '450px'
   },
 
-  // '@bp1': {
-  //   width: '50%'
-  // },
+  '@bp1': {
+    width: '50%'
+  },
 
   '@bp2': {
     width: '100%',
@@ -79,38 +78,5 @@ export const ClinicDescription = styled('div', {
     p: {
       fontSize: '1rem'
     }
-  }
-})
-
-export const ClinicObservationWrapper = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  gap: '0.75rem',
-  padding: ' 0 1.5rem',
-  margin: '2rem 0 3rem',
-
-  width: '100%',
-  maxWidth: '1448px'
-})
-
-export const ClinicObservation = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '0.75rem',
-
-  backgroundColor: '$gray4',
-  borderRadius: '$default',
-
-  padding: '1.5rem',
-
-  strong: {
-    fontWeight: '$bold',
-    color: '$white'
-  },
-
-  'span, strong': {
-    lineHeight: '$base'
   }
 })

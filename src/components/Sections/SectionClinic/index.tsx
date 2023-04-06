@@ -75,24 +75,6 @@ export function SectionClinic() {
         <ClinicSlider />
       </ClinicContainer>
       <PinkGradient />
-
-      {/* <ClinicObservationWrapper>
-        <ClinicObservation>
-          <Text size="sm" asChild>
-            <strong>
-              Trabalhamos apenas com atendimento particular. Não atendemos
-              convênios e planos de saúde.
-            </strong>
-          </Text>
-
-          <Text size="sm">
-            Mas não se preocupe. Se você possui algum convênio ou plano de
-            saúde, pode realizar seu agendamento na modalidade particular e nós
-            iremos te orientar e auxiliar, para que você solicite o reembolso
-            junto ao convênio e peça, ainda, dedução no Imposto de Renda.
-          </Text>
-        </ClinicObservation>
-      </ClinicObservationWrapper> */}
     </ClinicWrapper>
   )
 }
