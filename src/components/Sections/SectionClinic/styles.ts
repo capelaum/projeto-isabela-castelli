@@ -12,7 +12,7 @@ export const ClinicWrapper = styled('section', {
 export const ClinicContainer = styled('section', {
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'flex-end',
+  justifyContent: 'space-between',
   gap: '10rem',
   width: '100%',
   maxWidth: '1448px',
@@ -35,16 +35,16 @@ export const ClinicContent = styled(motion.div, {
   flexDirection: 'column',
   alignItems: 'flex-start',
   gap: '3rem',
-  width: '40%',
+  // width: '40%',
 
   p: {
-    lineHeight: '$base',
-    maxWidth: '450px'
+    lineHeight: '$base'
+    // maxWidth: '450px'
   },
 
-  '@bp1': {
-    width: '50%'
-  },
+  // '@bp1': {
+  //   width: '50%'
+  // },
 
   '@bp2': {
     width: '100%',

@@ -8,8 +8,6 @@ import {
   ClinicContainer,
   ClinicContent,
   ClinicDescription,
-  ClinicObservation,
-  ClinicObservationWrapper,
   ClinicWrapper
 } from './styles'
 
@@ -50,6 +48,17 @@ export function SectionClinic() {
                 qualidade de vida.
               </p>
             </Text>
+
+            <Text asChild>
+              <p>
+                Trabalhamos apenas com atendimento particular. Não atendemos
+                convênios e planos de saúde. Mas não se preocupe. Se você possui
+                algum convênio ou plano de saúde, pode realizar seu agendamento
+                na modalidade particular e nós iremos te orientar e auxiliar,
+                para que você solicite o reembolso junto ao convênio e peça,
+                ainda, dedução no Imposto de Renda.
+              </p>
+            </Text>
           </ClinicDescription>
 
           <ButtonLink
@@ -67,7 +76,7 @@ export function SectionClinic() {
       </ClinicContainer>
       <PinkGradient />
 
-      <ClinicObservationWrapper>
+      {/* <ClinicObservationWrapper>
         <ClinicObservation>
           <Text size="sm" asChild>
             <strong>
@@ -83,7 +92,7 @@ export function SectionClinic() {
             junto ao convênio e peça, ainda, dedução no Imposto de Renda.
           </Text>
         </ClinicObservation>
-      </ClinicObservationWrapper>
+      </ClinicObservationWrapper> */}
     </ClinicWrapper>
   )
 }

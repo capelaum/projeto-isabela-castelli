@@ -16,12 +16,13 @@ export function ClinicSlider() {
   const [loaded, setLoaded] = useState(false)
 
   const [sliderRef, instanceRef] = useKeenSlider({
+    loop: true,
+
     slides: {
       origin: 'center',
       perView: 1,
       spacing: 0
     },
-    loop: true,
 
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel)
