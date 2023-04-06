@@ -2,13 +2,11 @@ import { SliderArrow } from 'components/SliderArrow'
 import { SliderMobileArrows } from 'components/SliderMobileArrows'
 import { gallery } from 'data/gallery'
 import { useKeenSlider } from 'keen-slider/react'
-import Image from 'next/image'
 import { useState } from 'react'
 import {
-  ClinicImageWrapper,
+  ClinicImage,
   ClinicSliderContainer,
-  ClinicSliderMobileWrapper,
-  ClinicSliderWrapper
+  ClinicSliderMobileWrapper
 } from './styles'
 
 export function ClinicSlider() {
@@ -16,12 +14,13 @@ export function ClinicSlider() {
   const [loaded, setLoaded] = useState(false)
 
   const [sliderRef, instanceRef] = useKeenSlider({
+    loop: true,
+
     slides: {
       origin: 'center',
       perView: 1,
       spacing: 0
     },
-    loop: true,
 
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel)
@@ -33,33 +32,33 @@ export function ClinicSlider() {
 
   return (
     <ClinicSliderMobileWrapper>
-      <ClinicSliderWrapper
+      <ClinicSliderContainer
+        ref={sliderRef}
+        className="keen-slider"
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.2, duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <ClinicSliderContainer ref={sliderRef} className="keen-slider">
-          <SliderArrow
-            direction="left"
-            onClick={() => instanceRef.current?.prev()}
-          />
+        <SliderArrow
+          direction="left"
+          onClick={() => instanceRef.current?.prev()}
+        />
 
-          {gallery.map((galleryImage) => (
-            <ClinicImageWrapper
-              key={galleryImage.id}
-              className="keen-slider__slide"
-            >
-              <Image src={galleryImage.src} alt={galleryImage.alt} />
-            </ClinicImageWrapper>
-          ))}
-
-          <SliderArrow
-            direction="right"
-            onClick={() => instanceRef.current?.next()}
+        {gallery.map((galleryImage) => (
+          <ClinicImage
+            key={galleryImage.id}
+            src={galleryImage.src}
+            alt={galleryImage.alt}
+            className="keen-slider__slide"
           />
-        </ClinicSliderContainer>
-      </ClinicSliderWrapper>
+        ))}
+
+        <SliderArrow
+          direction="right"
+          onClick={() => instanceRef.current?.next()}
+        />
+      </ClinicSliderContainer>
 
       <SliderMobileArrows
         titleLeft="Ir para imagem à esquerda."
