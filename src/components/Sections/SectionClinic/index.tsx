@@ -75,6 +75,7 @@ export function SectionClinic() {
               convênios e planos de saúde.
             </strong>
           </Text>
+
           <Text size="sm">
             Mas não se preocupe. Se você possui algum convênio ou plano de
             saúde, pode realizar seu agendamento na modalidade particular e nós

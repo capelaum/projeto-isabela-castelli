@@ -107,7 +107,7 @@ export const ClinicObservation = styled('div', {
 
   strong: {
     fontWeight: '$bold',
-    color: '$primary'
+    color: '$white'
   },
 
   'span, strong': {
