@@ -30,22 +30,21 @@ export const globalStyles = globalCss({
 
     '&::-webkit-scrollbar': {
       background: '$gray6',
-      width: '10px',
+      width: '8px',
 
       '&:hover': {
-        background: '$black',
-        width: '10px'
+        background: '$black'
       }
     },
 
     '&::-webkit-scrollbar-thumb': {
       background: '$secondary',
-      // borderRadius: '50px',
-      width: '10px',
+      borderRadius: '50px',
+      width: '8px',
 
       '&:hover': {
         background: '$primary',
-        width: '10px'
+        width: '8px'
       }
     }
   },
