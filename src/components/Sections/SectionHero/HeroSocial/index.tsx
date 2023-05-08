@@ -17,7 +17,7 @@ export function HeroSocial() {
     >
       <Divider />
 
-      <Text size="sm" color="gray3" weight="medium">
+      <Text size="sm" color="gray1" weight="medium">
         Conheça minhas redes sociais:
       </Text>
 
@@ -30,7 +30,7 @@ export function HeroSocial() {
         >
           <Image src={Instagram} alt="Logo do Instagram." />
 
-          <Text size="sm" color="black" weight="medium">
+          <Text size="sm" color="white" weight="medium">
             psi.isabelacastelli
           </Text>
         </HeroSocialLink>
@@ -43,7 +43,7 @@ export function HeroSocial() {
         >
           <Image src={Doctoralia} alt="Logo do Instagram." />
 
-          <Text size="sm" color="black" weight="medium">
+          <Text size="sm" color="white" weight="medium">
             doctoralia isabelacastelli
           </Text>
         </HeroSocialLink>
