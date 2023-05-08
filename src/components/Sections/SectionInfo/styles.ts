@@ -20,7 +20,7 @@ export const InfoWrapper = styled(motion.div, {
   maxWidth: '1448px'
 })
 
-export const InfoWarning = styled('div', {
+export const InfoWarning = styled(motion.div, {
   width: '100%',
   maxWidth: '1448px',
 
@@ -35,8 +35,8 @@ export const InfoWarningText = styled(Text, {
 
   borderRadius: '$default',
 
-  // background: 'rgba(0, 0, 0, 0.25)',
-  backgroundColor: 'rgba(235, 199, 197, .1)',
+  background: 'rgba(0, 0, 0, 0.25)',
+  // backgroundColor: 'rgba(235, 199, 197, .1)',
   padding: '1.75rem 1.25rem',
   margin: '2.5rem 1.25rem',
 
