@@ -72,7 +72,7 @@ export const HeroSocialLink = styled(Link, {
 
   '&:hover': {
     span: {
-      color: '$gray3'
+      color: '$gray1'
     },
 
     img: {

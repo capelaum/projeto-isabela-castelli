@@ -1,18 +1,49 @@
+import { Text } from 'components/Text'
 import { motion } from 'framer-motion'
 import { styled } from 'styles/stitches.config'
 
-export const InfoWrapper = styled('section', {
+export const InfoSection = styled(motion.section, {
   display: 'flex',
   flexDirection: 'column',
-  padding: '2.5rem 1.5rem',
+  alignItems: 'center',
+  backgroundColor: '$gray4',
+
+  width: '100%',
+  gap: '2.5rem'
+})
+
+export const InfoWrapper = styled(motion.div, {
+  display: 'flex',
+  flexDirection: 'column',
+
+  width: '100%',
+  maxWidth: '1448px'
+})
+
+export const InfoWarning = styled(motion.div, {
   width: '100%',
   maxWidth: '1448px',
 
-  borderBottom: '1px solid rgba(255, 255, 255, .1)',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
+})
 
-  '@bp2': {
-    padding: '2.5rem 1.25rem'
-  }
+export const InfoWarningText = styled(Text, {
+  width: '100%',
+  display: 'flex',
+
+  borderRadius: '$default',
+
+  // background: 'rgba(0, 0, 0, 0.25)',
+  backgroundColor: 'rgba(235, 199, 197, .1)',
+  padding: '1.75rem 1.25rem',
+  margin: '2.5rem 1.25rem',
+
+  justifyContent: 'flex-start',
+
+  lineHeight: 1.6,
+  textAlign: 'justify'
 })
 
 export const InfoContent = styled(motion.div, {
@@ -21,13 +52,10 @@ export const InfoContent = styled(motion.div, {
   alignItems: 'center',
   gap: '10rem',
   position: 'relative',
+  padding: '2.5rem 1.25rem',
 
   '@bp1': {
     gap: '4rem',
-
-    h2: {
-      fontSize: '1.25rem'
-    },
 
     span: {
       fontSize: '$sm'

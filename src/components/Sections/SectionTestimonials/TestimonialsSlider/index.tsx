@@ -2,7 +2,6 @@ import { Heading } from 'components/Heading'
 import { SliderArrow } from 'components/SliderArrow'
 import { SliderMobileArrows } from 'components/SliderMobileArrows'
 import { Text } from 'components/Text'
-import { testimonials } from 'data/testimonials'
 import { useKeenSlider } from 'keen-slider/react'
 import { useState } from 'react'
 import {
@@ -11,6 +10,7 @@ import {
   TestimonialQuotes,
   TestimonialsSliderContainer
 } from './styles'
+import { testimonials } from './testimonials'
 
 export function TestimonialsSlider() {
   const [currentSlide, setCurrentSlide] = useState(0)

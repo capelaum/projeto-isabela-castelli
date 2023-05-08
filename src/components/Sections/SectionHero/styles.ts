@@ -11,13 +11,12 @@ export const HeroWrapper = styled('section', {
   display: 'flex',
   justifyContent: 'center',
 
-  background: '$white',
+  background: '$gray5',
 
   '@bp1': {
     minHeight: '100%',
     height: 'auto',
-    flexDirection: 'column',
-    background: '$white'
+    flexDirection: 'column'
   }
 })
 
@@ -62,8 +61,9 @@ export const HeroImageWrapper = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   width: '50%',
-  // border: '1px solid red',
   marginTop: '5rem',
+
+  // border: '1px solid red',
 
   position: 'absolute',
   top: 0,
@@ -89,7 +89,7 @@ export const HeroImageWrapper = styled('div', {
     right: 0,
     pointerEvents: 'none',
     background:
-      'linear-gradient(to right, $white 0%, rgba(255, 255, 255, 0.5) 15%,  rgba(255, 255, 255, 0.25) 20%, transparent 25%, transparent 100%)'
+      'linear-gradient(to right, $gray5 0%, rgba(0, 0, 0, 0.15) 10%, transparent 15%, transparent 100%)'
   },
 
   '@bp1': {
@@ -122,7 +122,7 @@ export const HeroImageMobileWrapper = styled('div', {
     right: 0,
     pointerEvents: 'none',
     background:
-      'linear-gradient(to bottom, $white 0%, rgba(255, 255, 255, 0.5) 5%,  rgba(255, 255, 255, 0.25) 10%, transparent 15%, transparent 100%)'
+      'linear-gradient(to bottom, $gray5 0%, rgba(0, 0, 0, 0.15) 2%, transparent 8%, transparent 100%)'
   },
 
   '@bp1': {

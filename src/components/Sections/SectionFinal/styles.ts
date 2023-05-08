@@ -66,7 +66,9 @@ export const FinalImageWrapper = styled(motion.div, {
   img: {
     width: '100%',
     height: '100%',
-    objectFit: 'cover'
+    maxHeight: 650,
+    objectFit: 'cover',
+    borderRadius: '$lg'
   },
 
   '@bp2': {

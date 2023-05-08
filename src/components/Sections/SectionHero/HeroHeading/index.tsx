@@ -14,17 +14,17 @@ export function HeroHeading() {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5, delay: 0.2 }}
     >
-      <Text weight="semibold" color="black" size="sm" asChild>
+      <Text weight="semibold" color="white" size="sm" asChild>
         <h2>Psicopatologia e Psicodiagnóstico</h2>
       </Text>
 
-      <Heading color="black" size="xl" asChild>
+      <Heading color="white" size="xl" asChild>
         <h1>
           A sua saúde mental <strong> é prioridade!</strong>
         </h1>
       </Heading>
 
-      <Text color="black" size="lg" asChild>
+      <Text color="white" size="lg" asChild>
         <p>
           Um acompanhamento psicológico bem feito vai ajudá-lo a compreender os
           seus sentimentos, seu modo de pensar e de agir.
