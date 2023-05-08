@@ -1,8 +1,8 @@
 import { SliderArrow } from 'components/SliderArrow'
 import { SliderMobileArrows } from 'components/SliderMobileArrows'
-import { gallery } from 'data/gallery'
 import { useKeenSlider } from 'keen-slider/react'
 import { useState } from 'react'
+import { gallery } from './gallery'
 import {
   ClinicImage,
   ClinicSliderContainer,
