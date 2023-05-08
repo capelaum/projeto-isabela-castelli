@@ -6,11 +6,10 @@ export const InfoSection = styled(motion.section, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  backgroundColor: '$gray4',
 
   width: '100%',
-  gap: '2.5rem',
-
-  borderTop: '1px solid rgba(255, 255, 255, .1)'
+  gap: '2.5rem'
 })
 
 export const InfoWrapper = styled(motion.div, {
@@ -22,8 +21,9 @@ export const InfoWrapper = styled(motion.div, {
 })
 
 export const InfoWarning = styled('div', {
-  backgroundColor: '$gray4',
   width: '100%',
+  maxWidth: '1448px',
+
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center'
@@ -32,9 +32,15 @@ export const InfoWarning = styled('div', {
 export const InfoWarningText = styled(Text, {
   width: '100%',
   display: 'flex',
-  justifyContent: 'flex-start',
-  maxWidth: '1448px',
+
+  borderRadius: '$default',
+
+  // background: 'rgba(0, 0, 0, 0.25)',
+  backgroundColor: 'rgba(235, 199, 197, .1)',
   padding: '1.75rem 1.25rem',
+  margin: '2.5rem 1.25rem',
+
+  justifyContent: 'flex-start',
 
   lineHeight: 1.6,
   textAlign: 'justify'
