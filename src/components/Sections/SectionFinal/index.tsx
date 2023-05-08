@@ -1,4 +1,4 @@
-import { Profile } from 'components/@constants'
+import { Final } from 'components/@constants'
 import { ButtonLink } from 'components/Button/ButtonLink'
 import { Heading } from 'components/Heading'
 import { SectionContainer } from 'components/SectionContainer'
@@ -53,7 +53,7 @@ export function SectionFinal() {
           viewport={{ once: true }}
         >
           <Image
-            src={Profile}
+            src={Final}
             alt="Foto de perfil da Psicóloga Isabela Castelli."
           />
         </FinalImageWrapper>
