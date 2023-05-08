@@ -13,17 +13,6 @@ import {
 export function SectionInfo() {
   return (
     <>
-      <InfoWarning>
-        <InfoWarningText size="sm" color="white">
-          Trabalhamos apenas com atendimento particular. Não atendemos convênios
-          e planos de saúde. Mas não se preocupe. Se você possui algum convênio
-          ou plano de saúde, pode realizar seu agendamento na modalidade
-          particular e nós iremos te orientar e auxiliar, para que você solicite
-          o reembolso junto ao convênio e peça, ainda, dedução no Imposto de
-          Renda.
-        </InfoWarningText>
-      </InfoWarning>
-
       <InfoSection>
         <InfoWrapper
           initial={{ opacity: 0, x: '-100%' }}
@@ -50,6 +39,17 @@ export function SectionInfo() {
           </InfoContent>
         </InfoWrapper>
       </InfoSection>
+
+      <InfoWarning>
+        <InfoWarningText size="sm" color="white">
+          Trabalhamos apenas com atendimento particular. Não atendemos convênios
+          e planos de saúde. Mas não se preocupe. Se você possui algum convênio
+          ou plano de saúde, pode realizar seu agendamento na modalidade
+          particular e nós iremos te orientar e auxiliar, para que você solicite
+          o reembolso junto ao convênio e peça, ainda, dedução no Imposto de
+          Renda.
+        </InfoWarningText>
+      </InfoWarning>
     </>
   )
 }

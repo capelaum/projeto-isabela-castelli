@@ -10,7 +10,7 @@ export const InfoSection = styled(motion.section, {
   width: '100%',
   gap: '2.5rem',
 
-  borderBottom: '1px solid rgba(255, 255, 255, .1)'
+  borderTop: '1px solid rgba(255, 255, 255, .1)'
 })
 
 export const InfoWrapper = styled(motion.div, {
@@ -22,7 +22,7 @@ export const InfoWrapper = styled(motion.div, {
 })
 
 export const InfoWarning = styled('div', {
-  backgroundColor: '$gray6',
+  backgroundColor: '$gray4',
   width: '100%',
   display: 'flex',
   justifyContent: 'center',
