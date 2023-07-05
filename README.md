@@ -18,3 +18,7 @@
 [phosphoricons]: https://phosphoricons.com
 [radix_ui]: https://www.radix-ui.com
 [keen_slider]: https://keen-slider.io/
+
+## :page_with_curl: License
+
+This project is under a custom license - [Luís Vinicius Capelletto Landing Page License](LICENSE)
