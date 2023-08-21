@@ -36,26 +36,20 @@ export default class MyDocument extends Document {
           />
 
           <Script
-            id={process.env.NEXT_PUBLIC_GTM_ID}
-            src={`https://www.googletagmanager.com/gtm.js?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
-            async
-            strategy="afterInteractive"
-            onLoad={() => {
-              console.log('Google Tag Manager loaded!')
-            }}
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
           />
         </Head>
+
         <body>
-          {/* <!-- Google Tag Manager (noscript) --> */}
-          <noscript>
-            <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
-              height="0"
-              width="0"
-              style={{ display: 'none', visibility: 'hidden' }}
-            ></iframe>
-          </noscript>
-          {/* <!-- End Google Tag Manager (noscript) --> */}
+          <Script id="google-analytics">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', ${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID});
+            `}
+          </Script>
 
           <Main />
           <NextScript />
