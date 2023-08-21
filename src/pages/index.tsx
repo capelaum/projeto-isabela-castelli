@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Psicóloga Isabela Castelli</title>
+        <title>Psicóloga Dra. Isabela Castelli</title>
       </Head>
 
       <Navbar />
