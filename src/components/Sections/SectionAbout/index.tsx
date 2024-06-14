@@ -39,19 +39,26 @@ export function SectionAbout() {
           <AboutDescription>
             <Text asChild>
               <p>
-                Sou psicóloga, inscrita no CRP {'01/18851'}. Doutora e Mestre em
-                Psicologia pela Universidade de Brasília. Pós-graduada em
-                Terapia Cognitivo Comportamental pelo Instituto Brasileiro de
-                Neuropsicologia e Ciências Cognitivas.
+                Sou psicóloga, inscrita no CRP {'01/18851'}. Doutora e mestre em
+                Psicologia pela Universidade de Brasília.
               </p>
             </Text>
 
             <Text asChild>
               <p>
-                Realizo avaliações para procedimentos invasivos (cirurgias e
-                amputações) e testagem para definição de psicodiagnóstico.
-                Possuo experiência com terapia de adultos, casais e crianças em
-                idade verbal.
+                Pós-graduada em Terapia Cognitivo Comportamental pelo Instituto
+                Brasileiro de Neuropsicologia e Ciências Cognitivas.
+                Pós-graduanda em Neuropsicologia pela Faculdade de Medicina da
+                Universidade de São Paulo. Pós-doutoranda pela Pontifícia
+                Universidade Católica de Goiás.
+              </p>
+            </Text>
+
+            <Text asChild>
+              <p>
+                Realizo avaliações e testagem para psicodiagnóstico e preparo
+                para procedimentos invasivos. Possuo experiência com pacientes
+                em crise, terapia de adultos, casais e crianças em idade verbal.
               </p>
             </Text>
           </AboutDescription>
